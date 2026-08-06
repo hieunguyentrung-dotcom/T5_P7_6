@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOEIC Reading · Test 5 · Part 7</title>
+<style>
+:root{--navy:#18275b;--navy2:#233472;--blue:#304d9b;--gold:#d5a01e;--gold-soft:#f6e9c4;
+--ink:#1e2532;--muted:#5d6780;--line:#d6ddec;--soft:#f2f6fc;--paper:#fff;
+--green:#197748;--green-bg:#e6f4ec;--red:#c0392b;--red-bg:#fdecea;--amber:#8a6d16;--amber-bg:#fff8e1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#eef2f8,#e7edf6);color:var(--ink);
+font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;font-size:15px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px 90px}
+header{background:var(--navy);color:#fff;border-bottom:4px solid var(--gold);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(24,39,91,.18)}
+.hbar{max-width:1080px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand .t{font-size:19px;font-weight:800}.brand .s{font-size:12px;color:#c7d0e6;font-weight:600;margin-left:10px}
+.hspace{flex:1}
+.progwrap{flex:1 1 220px;min-width:190px}
+.progmeta{display:flex;justify-content:space-between;font-size:11.5px;color:#c7d0e6;margin-bottom:4px;font-weight:600}
+.progbar{height:8px;background:#2b3c74;border-radius:99px;overflow:hidden}
+.progfill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),#eab836);transition:width .35s}
+.score{font-weight:800;color:var(--gold);font-size:13px}
+.notice{background:var(--amber-bg);border:1px solid #e9d38a;border-radius:12px;padding:14px 18px;margin:20px 0;font-size:13.3px;color:#6b5410;line-height:1.6}
+.notice b{color:#5a4508}
+.setup{background:var(--paper);border:1px solid var(--line);border-radius:16px;margin:26px 0;padding:26px;box-shadow:0 6px 24px rgba(24,39,91,.07)}
+.setup h1{margin:0 0 4px;font-size:23px;color:var(--navy)}
+.setup .lead{color:var(--muted);margin:0 0 20px;font-size:14px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.modes{grid-template-columns:1fr}}
+.mode{border:2px solid var(--line);border-radius:13px;padding:18px;cursor:pointer;transition:.18s;background:#fbfcfe}
+.mode:hover{border-color:var(--blue);transform:translateY(-2px)}
+.mode.sel{border-color:var(--gold);background:var(--gold-soft)}
+.mode .mt{font-weight:800;color:var(--navy);font-size:16px;margin-bottom:5px;display:flex;align-items:center;gap:8px}
+.mode .md{font-size:13px;color:var(--muted)}
+.mode .badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;background:var(--blue);color:#fff}
+.mode.sel .badge{background:var(--gold);color:var(--navy)}
+.toggles{display:flex;gap:20px;flex-wrap:wrap;margin:20px 0 6px;padding-top:18px;border-top:1px solid var(--line)}
+.tg{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;cursor:pointer;user-select:none}
+.tg input{display:none}
+.sw{width:40px;height:22px;background:#c3cbdb;border-radius:99px;position:relative;transition:.2s;flex:none}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;background:#fff;border-radius:50%;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.tg input:checked + .sw{background:var(--green)}
+.tg input:checked + .sw::after{transform:translateX(18px)}
+.start{margin-top:22px;width:100%;padding:15px;border:none;border-radius:12px;background:var(--navy);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
+.start:hover{background:var(--navy2)}
+.card{margin:28px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(24,39,91,.06)}
+.chead{background:var(--gold);color:var(--navy);padding:12px 18px;display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+.chead .rng{background:var(--navy);color:#fff;padding:2px 12px;border-radius:99px;font-size:12.5px;font-weight:800}
+.chead .ty{font-weight:700;font-size:13px}
+.chead .ti{font-size:12.5px;color:#4a3a0d;font-weight:600}
+.passagegrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+@media(max-width:760px){.passagegrid{grid-template-columns:1fr}}
+.pcol{padding:16px 18px;max-height:440px;overflow-y:auto}
+.pcol.vi{background:#eef3fb;border-left:1px solid var(--line)}
+@media(max-width:760px){.pcol.vi{border-left:none;border-top:1px solid var(--line)}}
+.pcol h4{color:var(--blue);font-weight:800;font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;margin:0 0 10px;display:flex;align-items:center;gap:7px;position:sticky;top:0;background:inherit}
+.pcol h4 .ic{width:20px;height:20px;border-radius:5px;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex:none}
+.pcol.vi h4 .ic{background:#2e7d4f}
+.ptext{font-size:13px;line-height:1.8;white-space:pre-wrap}
+.hidevi .pcol.vi{display:none}
+.hidevi .passagegrid{grid-template-columns:1fr}
+.hlspan{padding:1px 7px;border-radius:6px;font-weight:700}
+.hc0{background:#fde2e0;color:#8a3a33}
+.hc1{background:#d9ecf7;color:#1f4e79}
+.hc2{background:#e2f2e6;color:#1f6b3f}
+.hc3{background:#fce9cf;color:#8a5a1f}
+.hc4{background:#ecdff5;color:#5e3b7a}
+.legend{padding:8px 18px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.lgitem{display:inline-flex;align-items:center;gap:5px}
+.lgdot{width:11px;height:11px;border-radius:3px;display:inline-block}
+.qblock{padding:14px 18px;border-top:1px dashed var(--line)}
+.qblock:first-of-type{border-top:none}
+.qnum{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;color:#fff;background:var(--navy);border-radius:99px;padding:3px 12px;margin-bottom:10px}
+.qstem{font-size:13.8px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.qstemvi{font-size:12.4px;font-style:italic;color:var(--muted);margin-bottom:10px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:640px){.opts{grid-template-columns:1fr}}
+.opt{border:1.6px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;display:flex;gap:9px;align-items:flex-start;transition:.14s;background:#fff;font-size:13.6px}
+.opt:hover{border-color:var(--blue);background:#f6f9ff}
+.opt .ol{font-weight:800;color:var(--blue);flex:none}
+.opt .om{font-size:11.8px;color:#79839a;margin-top:1px;display:block}
+.opt.sel{border-color:var(--blue);background:#eaf1ff}
+.opt.correct{border-color:var(--green);background:var(--green-bg)}.opt.correct .ol{color:var(--green)}
+.opt.wrong{border-color:var(--red);background:var(--red-bg)}.opt.wrong .ol{color:var(--red)}
+.opt.locked{pointer-events:none}
+.opt .tick{margin-left:auto;font-weight:800}
+.opt.correct .tick{color:var(--green)}.opt.wrong .tick{color:var(--red)}
+.hidevi .opt .om{display:none}
+.fullopt{grid-template-columns:1fr !important}
+.fb{margin-top:12px;border-radius:10px;padding:12px 14px;font-size:13px;display:none}
+.fb.show{display:block}
+.fb.ok{background:var(--green-bg);border:1px solid #b7dcc5}.fb.no{background:var(--red-bg);border:1px solid #f0c0ba}
+.fb .verdict{font-weight:800;margin-bottom:5px}
+.fb.ok .verdict{color:var(--green)}.fb.no .verdict{color:var(--red)}
+.fb .row{margin-bottom:5px;line-height:1.55}
+.fb .row .en{font-style:italic;color:#5a6478}
+.unavail{background:var(--amber-bg);border:1px dashed #d8b854;border-radius:10px;padding:12px 14px;font-size:13px;color:#6b5410}
+.note{border-top:2px solid var(--gold);background:#fffaf0;padding:14px 18px}
+.note .nbhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.note .nbtitle{font-size:12.5px;font-weight:800;color:#9a7d2a}
+.note .nbstatus{font-size:10.5px;color:var(--muted);margin-left:auto}
+.note textarea{width:100%;min-height:60px;border:1px solid var(--line);border-radius:9px;padding:10px;font-family:inherit;font-size:13px;resize:vertical;background:#fff;color:var(--ink)}
+.note textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(213,160,30,.15)}
+.note .nbclear{background:none;border:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:700;padding:3px 10px;border-radius:7px;cursor:pointer}
+.teachernote{background:#eef3fb;border-left:4px solid var(--blue);border-radius:8px;padding:11px 14px;margin-bottom:12px}
+.teachernote .tnlabel{font-size:11px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.teachernote .tntext{font-size:13.5px;line-height:1.55;white-space:pre-wrap}
+.note .studentlbl{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px}
+.tbar{position:sticky;top:56px;z-index:45;background:#2b3c74;color:#fff;padding:9px 18px;display:none;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.tbar.show{display:block}
+.tbarinner{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px}
+.tbar .tbtitle{font-weight:800;color:var(--gold)}.tbar .tbnote{color:#c7d0e6}
+.tbar button{border:none;border-radius:8px;padding:8px 16px;font-weight:800;font-size:13px;cursor:pointer}
+.tbar .pub{background:var(--gold);color:var(--navy)}.tbar .clr{background:#455593;color:#fff}
+.actionbar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 18px rgba(24,39,91,.1);padding:12px 18px;z-index:40;display:none}
+.actionbar.show{display:block}
+.actioninner{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.actioninner .info{font-size:13px;color:var(--muted);font-weight:600}
+.btn{border:none;border-radius:10px;padding:11px 22px;font-weight:800;font-size:14px;cursor:pointer}
+.btn.primary{background:var(--gold);color:var(--navy)}.btn.ghost{background:#eef2f8;color:var(--navy)}
+.results{display:none;margin:28px 0;background:var(--paper);border:2px solid var(--gold);border-radius:16px;padding:26px;text-align:center}
+.results.show{display:block}
+.results h2{margin:0 0 4px;color:var(--navy);font-size:22px}
+.rscore{font-size:52px;font-weight:800;color:var(--gold);line-height:1.1;margin:10px 0}
+.rscore small{font-size:22px;color:var(--muted);font-weight:700}
+.rmsg{color:var(--muted);font-size:14px;margin-bottom:18px}
+.rbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hidden{display:none!important}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:22px}
+</style>
+</head>
+<body>
+<header><div class="hbar">
+ <div class="brand"><span class="t">TOEIC Reading</span><span class="s">Test 5 · Part 7 — Reading Comprehension</span></div>
+ <div class="hspace"></div>
+ <div class="progwrap" id="progWrap" style="display:none">
+  <div class="progmeta"><span id="progText">0 / 54 câu</span><span class="score" id="scoreText"></span></div>
+  <div class="progbar"><div class="progfill" id="progFill"></div></div>
+ </div>
+</div></header>
+<div class="tbar" id="teacherBar"><div class="tbarinner">
+ <span class="tbtitle">🧑‍🏫 Chế độ giáo viên</span>
+ <span class="tbnote">Gõ ghi chú vào từng đoạn văn → bấm "Xuất bản" để tạo file cho sinh viên.</span>
+ <div class="hspace" style="flex:1"></div>
+ <button class="clr" id="clearAllNotes" type="button">Xóa hết ghi chú</button>
+ <button class="pub" id="publishBtn" type="button">📤 Xuất bản ghi chú</button>
+</div></div>
+<div class="wrap">
+ <section class="setup" id="setup">
+  <h1>Luyện TOEIC Reading · Part 7 — Đọc hiểu</h1>
+  <p class="lead">Test 5 · Questions 147–200 · Các đoạn văn đơn/đôi/ba văn bản kèm câu hỏi đọc hiểu.</p>
+  <div class="notice"><b>✅ Đã cập nhật:</b> Bộ 54/54 câu (147–200) hiện đã đầy đủ, nhiều câu được xác nhận trực tiếp qua khung đáp án gốc của giáo viên (không chỉ suy luận). Riêng <b>câu 179</b> (thời lượng thảo luận) và <b>câu 196</b> (biểu đồ giấy lãng phí) vẫn dựa một phần vào bảng số liệu quá nhỏ để đọc trọn vẹn — đáp án là suy luận có cơ sở, được đánh dấu ⚠️ trong phần giải thích.</div>
+  <div class="modes">
+   <div class="mode sel" data-mode="practice"><div class="mt">📘 Luyện tập <span class="badge">Feedback ngay</span></div><div class="md">Chọn đáp án là biết đúng/sai ngay kèm giải thích song ngữ.</div></div>
+   <div class="mode" data-mode="exam"><div class="mt">⏱️ Thi thử <span class="badge">Chấm sau</span></div><div class="md">Làm hết rồi nộp mới chấm — giống điều kiện thi thật.</div></div>
+  </div>
+  <div class="toggles">
+   <label class="tg"><input type="checkbox" id="tgVi" checked><span class="sw"></span>Hiện bản dịch tiếng Việt</label>
+   <label class="tg"><input type="checkbox" id="tgNote" checked><span class="sw"></span>Hiện ô ghi chú &amp; trao đổi</label>
+  </div>
+  <button class="start" id="startBtn">Bắt đầu làm bài →</button>
+ </section>
+ <section class="results" id="results">
+  <h2>Hoàn thành!</h2>
+  <div class="rscore" id="rScore">0<small>/54</small></div>
+  <div class="rmsg" id="rMsg"></div>
+  <div class="rbtns"><button class="btn primary" id="reviewBtn">Xem lại đáp án</button><button class="btn ghost" id="restartBtn">Làm lại từ đầu</button></div>
+ </section>
+ <div id="quiz"></div>
+</div>
+<div class="actionbar" id="actionBar"><div class="actioninner">
+ <span class="info" id="answeredInfo">Đã trả lời 0 / 54 câu</span>
+ <div class="hspace" style="flex:1"></div>
+ <button class="btn ghost" type="button" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">Lên đầu bài</button>
+ <button class="btn primary" id="submitBtn" type="button">Nộp bài</button>
+</div></div>
+<footer>TOEIC Reading Test 5 · Part 7 · Tài liệu luyện tập tương tác</footer>
+<script id="pdata" type="application/json">[
+ {
+  "range": "147-148",
+  "type": "Article / Bài báo",
+  "title": "Ventura Toys Announces CEO Retirement",
+  "passageEn": "Ventura Toys Announces CEO Retirement and New Appointee\n\nVentura Toys Corporation announced Monday that Paolo Lucas will retire as chief executive officer on October 30. However, Lucas {{147|will continue to serve as chairman of the board}}. The board of directors elected Manuel Garza as Lucas's successor, {{148|effective on October 31}}. Garza currently serves as president and chief operating officer.\n\nLucas has played a variety of roles at the company, including senior attorney, product manager, and treasurer. He has served on the board of directors since 2004. Lucas was appointed president of Ventura Toys in 2008 and CEO in 2009. Under Lucas's leadership, the company has grown through strategic acquisitions and a strong emphasis on new product development.\n\nLucas said of his successor, “I’m confident that Ventura will continue its growth under Manuel’s leadership.” Manuel Garza is a 20-year veteran of the company who has served as COO since 2012. In that role, he led all of Ventura’s global operations.",
+  "passageVi": "Ventura Toys thông báo Tổng Giám đốc nghỉ hưu và người kế nhiệm mới\n\nTập đoàn Ventura Toys thông báo hôm thứ Hai rằng ông Paolo Lucas sẽ nghỉ hưu khỏi vị trí Tổng Giám đốc (CEO) vào ngày 30 tháng 10. Tuy nhiên, ông Lucas {{147|sẽ tiếp tục giữ chức Chủ tịch Hội đồng quản trị}}. Hội đồng quản trị đã bầu ông Manuel Garza làm người kế nhiệm ông Lucas, {{148|có hiệu lực từ ngày 31 tháng 10}}. Ông Garza hiện đang giữ chức Chủ tịch kiêm Giám đốc điều hành (COO).\n\nÔng Lucas đã đảm nhiệm nhiều vai trò khác nhau tại công ty, bao gồm luật sư cấp cao, quản lý sản phẩm, và thủ quỹ. Ông đã là thành viên hội đồng quản trị từ năm 2004. Ông Lucas được bổ nhiệm làm Chủ tịch của Ventura Toys năm 2008 và CEO năm 2009. Dưới sự lãnh đạo của ông Lucas, công ty đã tăng trưởng nhờ các thương vụ mua lại chiến lược và sự chú trọng mạnh mẽ vào phát triển sản phẩm mới.\n\nÔng Lucas nói về người kế nhiệm mình: “Tôi tin tưởng Ventura sẽ tiếp tục tăng trưởng dưới sự lãnh đạo của Manuel.” Ông Manuel Garza là người đã gắn bó 20 năm với công ty, giữ chức COO từ năm 2012. Ở vai trò đó, ông phụ trách toàn bộ hoạt động toàn cầu của Ventura.",
+  "questions": [
+   {
+    "id": 147,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "He will remain on the board of directors.",
+      "vi": "Ông ấy sẽ tiếp tục là thành viên hội đồng quản trị."
+     },
+     {
+      "l": "B",
+      "en": "He has held several jobs at the company.",
+      "vi": "Ông ấy đã đảm nhiệm nhiều vị trí tại công ty."
+     },
+     {
+      "l": "C",
+      "en": "He has been with Ventura for 20 years.",
+      "vi": "Ông ấy đã gắn bó với Ventura 20 năm."
+     },
+     {
+      "l": "D",
+      "en": "He focused on creating new products as CEO.",
+      "vi": "Ông ấy chú trọng phát triển sản phẩm mới khi làm CEO."
+     }
+    ],
+    "explVi": "**Xác nhận qua khung đáp án gốc.** (A) đúng vì bài nói ông **sẽ tiếp tục là chủ tịch hội đồng quản trị**; (B) đúng vì ông từng làm luật sư, quản lý sản phẩm, thủ quỹ; (D) đúng vì bài nhấn mạnh **chú trọng phát triển sản phẩm mới**. Chi tiết “20 năm” thực ra nói về ông **Garza** (người kế nhiệm), không phải Lucas — nên (C) là điều KHÔNG được nói về Lucas.",
+    "explEn": "Verified via the source answer key. (A), (B), (D) are all directly stated about Lucas; the “20-year veteran” detail actually describes Garza, not Lucas — so (C) is the one NOT stated about him.",
+    "qen": "What is NOT stated about the retiring CEO?",
+    "qvi": "Điều gì KHÔNG được nêu về vị CEO sắp nghỉ hưu?"
+   },
+   {
+    "id": 148,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "successful",
+      "vi": "thành công"
+     },
+     {
+      "l": "B",
+      "en": "operative",
+      "vi": "có hiệu lực"
+     },
+     {
+      "l": "C",
+      "en": "intentional",
+      "vi": "cố ý"
+     },
+     {
+      "l": "D",
+      "en": "sufficient",
+      "vi": "đủ"
+     }
+    ],
+    "explVi": "“Effective on October 31” nghĩa là **có hiệu lực từ ngày 31 tháng 10** — gần nghĩa nhất với **operative** (đang có hiệu lực/vận hành).",
+    "explEn": "“Effective on October 31” means the change takes effect/becomes operative on that date.",
+    "qen": "The word “effective” in paragraph 1, line 3, is closest in meaning to",
+    "qvi": "Từ “effective” ở đoạn 1, dòng 3, gần nghĩa nhất với"
+   }
+  ]
+ },
+ {
+  "range": "149-150",
+  "type": "Text-message chain / Chuỗi tin nhắn",
+  "title": "Meryl K & Ellen B — Lunch Plans",
+  "passageEn": "Meryl K [11:42 A.M.] How about going out to lunch for a change? I'm tired of the cafeteria food. There's a Thai place a few blocks away that looks good. Not too expensive, and {{149|lots of vegetarian options for you}}, too.\n\nEllen B [11:44 A.M.] I wish we could do that, but there's the CFO visit at 1:00, remember? Everyone is supposed to be here, and I don't think we could make it back in time. Maybe tomorrow?\n\nMeryl K [11:45 A.M.] Oh, I guess you didn't see the e-mail that went around about an hour ago. The visit's been moved to 3:00, so it's not a problem.\n\nEllen B [11:48 A.M.] Just read it. {{150|Thai food it is, then}}.",
+  "passageVi": "Meryl K [11:42] Hay là đổi gió đi ăn trưa ngoài đi? Tôi chán món ăn ở căng-tin lắm rồi. Có một quán Thái cách vài dãy nhà, trông ổn lắm. Không quá đắt, lại có {{149|nhiều món chay cho chị nữa}}.\n\nEllen B [11:44] Tôi cũng muốn lắm, nhưng có buổi thăm của CFO lúc 1 giờ, chị nhớ không? Ai cũng phải có mặt, mà tôi nghĩ mình không kịp quay lại đâu. Hay để mai?\n\nMeryl K [11:45] À, chắc chị chưa xem email gửi đi khoảng một tiếng trước. Buổi thăm đã dời sang 3 giờ rồi, nên không vấn đề gì đâu.\n\nEllen B [11:48] Vừa đọc xong. {{150|Vậy thì món Thái thôi}}.",
+  "questions": [
+   {
+    "id": 149,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "She is willing to miss the CFO visit.",
+      "vi": "Cô ấy sẵn lòng bỏ lỡ buổi thăm của CFO."
+     },
+     {
+      "l": "B",
+      "en": "She prefers the cafeteria food.",
+      "vi": "Cô ấy thích món ăn căng-tin hơn."
+     },
+     {
+      "l": "C",
+      "en": "She did not receive an e-mail.",
+      "vi": "Cô ấy không nhận được email."
+     },
+     {
+      "l": "D",
+      "en": "She does not eat meat.",
+      "vi": "Cô ấy không ăn thịt."
+     }
+    ],
+    "explVi": "Meryl nhắc quán Thái có “lots of vegetarian options for you, too” (nhiều món chay cho chị nữa) — ngụ ý Ellen ăn chay/không ăn thịt.",
+    "explEn": "Meryl mentions the Thai place has “lots of vegetarian options for you, too,” implying Ellen doesn't eat meat.",
+    "qen": "What is suggested about Ellen B?",
+    "qvi": "Điều gì được gợi ý về Ellen B?"
+   },
+   {
+    "id": 150,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "She wants to try the restaurant another time.",
+      "vi": "Cô ấy muốn thử quán vào dịp khác."
+     },
+     {
+      "l": "B",
+      "en": "She will go to the restaurant for lunch.",
+      "vi": "Cô ấy sẽ đến quán ăn trưa."
+     },
+     {
+      "l": "C",
+      "en": "She wants to know more about Thai food.",
+      "vi": "Cô ấy muốn biết thêm về món Thái."
+     },
+     {
+      "l": "D",
+      "en": "She especially enjoys Thai food.",
+      "vi": "Cô ấy đặc biệt thích món Thái."
+     }
+    ],
+    "explVi": "Sau khi biết buổi thăm CFO đã dời giờ (không còn cản trở), Ellen nói “Thai food it is, then” — nghĩa là “vậy thì đi ăn Thái”, tức đồng ý đến quán ăn trưa.",
+    "explEn": "Once the CFO visit is no longer a conflict, Ellen's “Thai food it is, then” means she agrees to go to the restaurant for lunch.",
+    "qen": "At 11:48 A.M., what does Ellen B mean when she writes, “Thai food it is, then”?",
+    "qvi": "Lúc 11:48, Ellen B có ý gì khi viết “Thai food it is, then”?"
+   }
+  ]
+ },
+ {
+  "range": "151-152",
+  "type": "Invoice / Hóa đơn",
+  "title": "Mint Design — Invoice to Vista Hotel",
+  "passageEn": "MINT DESIGN\n576 Fullerton St, Granger\nInvoice Date: 08/02 · Balance Due: $1,937.01\n\nBILL TO: Vista Hotel, 900 Myrtle Boulevard, Granger\nSHIPMENT DETAILS: Carrier: RFT Couriers · Method: two-day priority · Ship Date: 07/23\n\nDesign services (logo, letterhead, business card) — {{152|project (1) — $3,500.00}} — 8.25% tax\nAdditional services (sketches) — $125.00 — 8.25% tax\n\nPre-tax Total: $3,625.00\nTax: $299.06\nShipping: $12.95\nTotal: $3,937.01\n{{151|Payments: -$2,000.00}}\nBalance: $1,937.01\n\nIMPORTANT: This invoice is payable by check only, made out to Mint Design. Balance is due within 30 days of the invoice date. Late payments are subject to additional charges of 5% per month. Thank you!",
+  "passageVi": "MINT DESIGN\n576 Fullerton St, Granger\nNgày lập hóa đơn: 08/02 · Số dư còn nợ: 1.937,01 đô la\n\nGỬI ĐẾN: Vista Hotel, 900 Myrtle Boulevard, Granger\nCHI TIẾT VẬN CHUYỂN: Đơn vị vận chuyển: RFT Couriers · Phương thức: ưu tiên hai ngày · Ngày gửi: 23/07\n\nDịch vụ thiết kế (logo, tiêu đề thư, danh thiếp) — {{152|1 dự án trọn gói — 3.500,00 đô la}} — thuế 8,25%\nDịch vụ bổ sung (phác thảo) — 125,00 đô la — thuế 8,25%\n\nTổng trước thuế: 3.625,00 đô la\nThuế: 299,06 đô la\nPhí vận chuyển: 12,95 đô la\nTổng cộng: 3.937,01 đô la\n{{151|Đã thanh toán: -2.000,00 đô la}}\nSố dư còn nợ: 1.937,01 đô la\n\nQUAN TRỌNG: Hóa đơn này chỉ thanh toán bằng séc, đề tên Mint Design. Số dư phải thanh toán trong vòng 30 ngày kể từ ngày lập hóa đơn. Thanh toán trễ sẽ bị tính thêm phí 5% mỗi tháng. Xin cảm ơn!",
+  "questions": [
+   {
+    "id": 151,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "$299.06",
+      "vi": "299,06 đô la"
+     },
+     {
+      "l": "B",
+      "en": "$1,937.01",
+      "vi": "1.937,01 đô la"
+     },
+     {
+      "l": "C",
+      "en": "$2,000.00",
+      "vi": "2.000,00 đô la"
+     },
+     {
+      "l": "D",
+      "en": "$3,625.00",
+      "vi": "3.625,00 đô la"
+     }
+    ],
+    "explVi": "Tổng hóa đơn là 3.937,01 đô la, số dư còn nợ là 1.937,01 đô la — vậy số tiền đã thanh toán = 3.937,01 − 1.937,01 = **2.000,00 đô la** (khớp với dòng “Payments: -2,000.00”).",
+    "explEn": "Total is $3,937.01 and balance due is $1,937.01, so the amount already paid = $2,000.00, matching the “Payments: -2,000.00” line.",
+    "qen": "How much has Vista Hotel already paid?",
+    "qvi": "Vista Hotel đã thanh toán bao nhiêu?"
+   },
+   {
+    "id": 152,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "It shipped the items on 08/02.",
+      "vi": "Hàng được gửi vào ngày 08/02."
+     },
+     {
+      "l": "B",
+      "en": "It charges a set price per project.",
+      "vi": "Công ty tính giá trọn gói theo dự án."
+     },
+     {
+      "l": "C",
+      "en": "It does not specify a payment method.",
+      "vi": "Không nêu rõ phương thức thanh toán."
+     },
+     {
+      "l": "D",
+      "en": "It does not charge late fees.",
+      "vi": "Không tính phí trễ hạn."
+     }
+    ],
+    "explVi": "Dòng dịch vụ thiết kế ghi “project (1) — $3,500.00” — tức tính giá **trọn gói theo dự án** (1 dự án = 1 mức giá cố định), không tính theo giờ. Bẫy: (A) ngày gửi hàng thực tế là 07/23, còn 08/02 là ngày lập hóa đơn; (C) hóa đơn ghi rõ chỉ thanh toán bằng séc; (D) hóa đơn nêu rõ có phí trễ hạn 5%/tháng.",
+    "explEn": "The design-services line shows “project (1) — $3,500.00,” a flat per-project rate. (A) confuses the ship date (07/23) with the invoice date (08/02); (C) and (D) are contradicted by the invoice's payment and late-fee terms.",
+    "qen": "Which is true about Mint Design?",
+    "qvi": "Điều gì đúng về Mint Design?"
+   }
+  ]
+ },
+ {
+  "range": "153-154",
+  "type": "Advertisement / Rao vặt",
+  "title": "For Sale — 1986 Celebrity Eurosport",
+  "passageEn": "FOR SALE\n\nI'm selling my 1986 Celebrity Eurosport {{153|because my company is transferring me overseas}}. This car has very low mileage, and I am its only owner. I have treated this car with great care. Don't miss this one!\n\n· Classic F-platform with {{154|original doors and GM/Delco stereo}}!\n· New exhaust, shocks, tires, and brakes—all replaced within the last six months\n· Needs a paint touch-up and some minor repair work on fenders, rear bumper, and engine\n· Seat covers and window shades included\n· Reliable transportation for a student or as a second car\n\n$400 O.B.O.\n· Cash only please\n\nCall Randy, 389-3412, weekdays before 5 P.M.",
+  "passageVi": "RAO VẶT — BÁN XE\n\nTôi bán chiếc Celebrity Eurosport đời 1986 {{153|vì công ty chuyển tôi ra nước ngoài làm việc}}. Xe đi rất ít số km, và tôi là chủ sở hữu duy nhất. Tôi đã chăm sóc xe rất kỹ. Đừng bỏ lỡ cơ hội này!\n\n· Khung gầm F cổ điển với {{154|cửa xe nguyên bản và dàn âm thanh GM/Delco}}!\n· Ống xả, giảm xóc, lốp và phanh đều mới — đã thay toàn bộ trong sáu tháng qua\n· Cần sơn dặm lại và sửa nhỏ ở vè xe, cản sau và động cơ\n· Kèm theo bọc ghế và tấm che cửa sổ\n· Phương tiện đáng tin cậy cho sinh viên hoặc làm xe thứ hai\n\n400 đô la (có thể thương lượng)\n· Chỉ nhận tiền mặt\n\nGọi cho Randy, 389-3412, các ngày trong tuần trước 5 giờ chiều.",
+  "questions": [
+   {
+    "id": 153,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "It is too old.",
+      "vi": "Xe đã quá cũ."
+     },
+     {
+      "l": "B",
+      "en": "He needs money.",
+      "vi": "Anh ấy cần tiền."
+     },
+     {
+      "l": "C",
+      "en": "It needs repairs.",
+      "vi": "Xe cần sửa chữa."
+     },
+     {
+      "l": "D",
+      "en": "He is moving abroad.",
+      "vi": "Anh ấy chuyển ra nước ngoài."
+     }
+    ],
+    "explVi": "Randy nói rõ lý do: “vì công ty chuyển tôi ra nước ngoài làm việc” — tức anh chuyển đi nước ngoài.",
+    "explEn": "Randy states the reason directly: his company is transferring him overseas.",
+    "qen": "Why is Randy selling his car?",
+    "qvi": "Vì sao Randy bán xe của mình?"
+   },
+   {
+    "id": 154,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "It needs brand-new tires.",
+      "vi": "Xe cần lốp hoàn toàn mới."
+     },
+     {
+      "l": "B",
+      "en": "It has its original stereo.",
+      "vi": "Xe có dàn âm thanh nguyên bản."
+     },
+     {
+      "l": "C",
+      "en": "It comes without seat covers.",
+      "vi": "Xe không có bọc ghế."
+     },
+     {
+      "l": "D",
+      "en": "It has a new coat of paint.",
+      "vi": "Xe vừa được sơn mới."
+     }
+    ],
+    "explVi": "Quảng cáo ghi “original doors and GM/Delco stereo” — dàn âm thanh còn nguyên bản. Lốp/phanh mới thay (không phải “cần lốp mới”); có kèm bọc ghế; xe cần sơn dặm chứ chưa sơn mới.",
+    "explEn": "The ad states “original doors and GM/Delco stereo.” Tires/brakes were already replaced, seat covers ARE included, and the paint still needs touch-up, not already redone.",
+    "qen": "What is stated about the car?",
+    "qvi": "Điều gì được nêu về chiếc xe?"
+   }
+  ]
+ },
+ {
+  "range": "155-157",
+  "type": "E-mail / Thư điện tử",
+  "title": "Flight Delay — Peter Brown to Saul Leganza",
+  "passageEn": "To: Saul Leganza, Guzzi Imports <sleganza@guzziimports.com>\nFrom: Peter Brown, Mel-Mart Superstore <pbrown@mel-mart.com>\nSubject: Re: Flight delay\n\nHi, Saul,\n\n[1] This is just to confirm that I have received your phone message. [2] {{155|I will now be leaving Concord early tomorrow morning}} and arriving in Los Angeles on Star Airways flight 77 tomorrow night around 8:00. {{156|Because it's a last-minute booking, the only affordable flights had multiple stops}} (Philadelphia and Las Vegas), so it is going to take a lot longer than I had anticipated. [3] I am sorry for any trouble this will cause you. [4] Hopefully, we can reschedule our meetings for {{157|the day after I get there, the 17th}}. I have attached my new itinerary. Please call me if you have any questions; otherwise, see you soon!\n\nRegards,\nPeter",
+  "passageVi": "Đến: Saul Leganza, Guzzi Imports\nTừ: Peter Brown, Mel-Mart Superstore\nChủ đề: Trả lời: Chuyến bay bị trễ\n\nChào Saul,\n\n[1] Tôi viết thư này để xác nhận đã nhận được tin nhắn thoại của anh. [2] {{155|Tôi sẽ rời Concord sớm vào sáng mai}} và đến Los Angeles trên chuyến bay 77 của Star Airways vào khoảng 8 giờ tối mai. {{156|Vì đây là vé đặt gấp vào phút chót, các chuyến bay giá hợp lý duy nhất đều phải quá cảnh nhiều chặng}} (Philadelphia và Las Vegas), nên sẽ mất nhiều thời gian hơn tôi dự tính. [3] Tôi xin lỗi vì bất kỳ phiền toái nào việc này gây ra cho anh. [4] Hy vọng chúng ta có thể dời lịch họp {{157|sang ngày sau khi tôi đến, tức ngày 17}}. Tôi đã đính kèm lịch trình mới. Xin gọi cho tôi nếu có thắc mắc; nếu không thì hẹn sớm gặp lại!\n\nThân,\nPeter",
+  "questions": [
+   {
+    "id": 155,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Los Angeles",
+      "vi": "Los Angeles"
+     },
+     {
+      "l": "B",
+      "en": "Philadelphia",
+      "vi": "Philadelphia"
+     },
+     {
+      "l": "C",
+      "en": "Las Vegas",
+      "vi": "Las Vegas"
+     },
+     {
+      "l": "D",
+      "en": "Concord",
+      "vi": "Concord"
+     }
+    ],
+    "explVi": "Peter viết “I will now be leaving Concord…” (sắp rời Concord) — tức anh hiện đang ở Concord.",
+    "explEn": "Peter writes “I will now be leaving Concord…,” implying he is currently in Concord.",
+    "qen": "Where is Mr. Brown now?",
+    "qvi": "Ông Brown hiện đang ở đâu?"
+   },
+   {
+    "id": 156,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "[1]",
+      "vi": "[1]"
+     },
+     {
+      "l": "B",
+      "en": "[2]",
+      "vi": "[2]"
+     },
+     {
+      "l": "C",
+      "en": "[3]",
+      "vi": "[3]"
+     },
+     {
+      "l": "D",
+      "en": "[4]",
+      "vi": "[4]"
+     }
+    ],
+    "explVi": "Câu chèn “My flight to California has been canceled because of bad weather” giải thích lý do phải đặt vé gấp — hợp lý nhất khi đặt ngay trước câu nói về việc đặt vé phút chót, tức vị trí [2].",
+    "explEn": "“My flight to California has been canceled because of bad weather” explains the reason for the last-minute booking, fitting best right before that detail at position [2].",
+    "qen": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? “My flight to California has been canceled because of bad weather.”",
+    "qvi": "Câu sau đây phù hợp nhất với vị trí nào trong [1], [2], [3], [4]? “My flight to California has been canceled because of bad weather.”"
+   },
+   {
+    "id": 157,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "August 1",
+      "vi": "1 tháng 8"
+     },
+     {
+      "l": "B",
+      "en": "August 15",
+      "vi": "15 tháng 8"
+     },
+     {
+      "l": "C",
+      "en": "August 16",
+      "vi": "16 tháng 8"
+     },
+     {
+      "l": "D",
+      "en": "August 17",
+      "vi": "17 tháng 8"
+     }
+    ],
+    "explVi": "Peter viết “Hopefully, we can reschedule our meetings for the day after I get there, the 17th” — họp lại vào ngày 17, tức là ANH đến vào ngày **16**.",
+    "explEn": "Peter says meetings will be rescheduled for “the day after I get there, the 17th” — meaning he arrives on the 16th.",
+    "qen": "When will Mr. Brown arrive?",
+    "qvi": "Ông Brown sẽ đến khi nào?"
+   }
+  ]
+ },
+ {
+  "range": "158-160",
+  "type": "Notice / Thông báo",
+  "title": "Movies at the Marquis",
+  "passageEn": "Movies at the Marquis\n\nThe Marquis is proud to announce our special feature week. For one week per month, we will show movies from a particular genre. This month, we have chosen horror. We want to know what YOU want to see, so {{159|fill in an audience choice form}} next time you visit. We will select our next genre based on the results of the survey.\n\nHorror Week\nGhostly Monsters (1956) — Kip McVities, Rosie Ranger — Monday, 6:00 P.M.\nThe Bilge and the Brine (1943) — Mack Jangler, Gregory Ryan — Tuesday and Wednesday, 7:30 P.M.\nElvis and the Swamp Monster (1978) — Mike Myron, Roger Paul — {{158|Thursday and Friday}}, 8:00 P.M.\nDigstown (1987) — Lou Rosette, Jr., D. Hasbro Wiseman — Friday through Sunday, {{160|9:00 P.M., 12:00 A.M.}}",
+  "passageVi": "Phim tại rạp Marquis\n\nRạp Marquis tự hào thông báo tuần phim đặc biệt. Mỗi tháng một tuần, rạp sẽ chiếu phim theo một thể loại nhất định. Tháng này, chúng tôi chọn thể loại kinh dị. Chúng tôi muốn biết quý khách muốn xem gì, nên {{159|hãy điền vào phiếu khảo sát}} ở lần ghé thăm tới. Thể loại tiếp theo sẽ được chọn dựa trên kết quả khảo sát.\n\nTuần phim kinh dị\nGhostly Monsters (1956) — Kip McVities, Rosie Ranger — Thứ Hai, 18:00\nThe Bilge and the Brine (1943) — Mack Jangler, Gregory Ryan — Thứ Ba và Thứ Tư, 19:30\nElvis and the Swamp Monster (1978) — Mike Myron, Roger Paul — {{158|Thứ Năm và Thứ Sáu}}, 20:00\nDigstown (1987) — Lou Rosette, Jr., D. Hasbro Wiseman — Thứ Sáu đến Chủ Nhật, {{160|21:00, 0:00}}",
+  "questions": [
+   {
+    "id": 158,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Monday",
+      "vi": "Thứ Hai"
+     },
+     {
+      "l": "B",
+      "en": "Tuesday",
+      "vi": "Thứ Ba"
+     },
+     {
+      "l": "C",
+      "en": "Thursday",
+      "vi": "Thứ Năm"
+     },
+     {
+      "l": "D",
+      "en": "Friday",
+      "vi": "Thứ Sáu"
+     }
+    ],
+    "explVi": "Thứ Sáu vừa có suất “Elvis and the Swamp Monster” (Thứ Năm–Sáu) vừa có suất “Digstown” (Thứ Sáu–Chủ Nhật) — hai phim khác nhau cùng chiếu thứ Sáu.",
+    "explEn": "Friday overlaps both “Elvis and the Swamp Monster” (Thu–Fri) and “Digstown” (Fri–Sun) — two different films on the same day.",
+    "qen": "On what day are two movies shown?",
+    "qvi": "Ngày nào có hai phim được chiếu?"
+   },
+   {
+    "id": 159,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "By asking about customer preferences",
+      "vi": "Bằng cách hỏi ý kiến khách hàng"
+     },
+     {
+      "l": "B",
+      "en": "By measuring box office popularity",
+      "vi": "Bằng cách đo doanh thu phòng vé"
+     },
+     {
+      "l": "C",
+      "en": "By reading critics' recommendations",
+      "vi": "Bằng cách đọc đánh giá của nhà phê bình"
+     },
+     {
+      "l": "D",
+      "en": "By asking staff members",
+      "vi": "Bằng cách hỏi ý kiến nhân viên"
+     }
+    ],
+    "explVi": "Thông báo nói rõ: khách điền phiếu khảo sát và rạp chọn thể loại tiếp theo dựa trên kết quả khảo sát đó.",
+    "explEn": "The notice says the theater selects the next genre based on the audience survey results.",
+    "qen": "How will the theater choose the theme of the next special feature week?",
+    "qvi": "Rạp sẽ chọn chủ đề cho tuần phim đặc biệt tiếp theo bằng cách nào?"
+   },
+   {
+    "id": 160,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Noon",
+      "vi": "Buổi trưa"
+     },
+     {
+      "l": "B",
+      "en": "8:00 P.M.",
+      "vi": "8 giờ tối"
+     },
+     {
+      "l": "C",
+      "en": "9:00 P.M.",
+      "vi": "9 giờ tối"
+     },
+     {
+      "l": "D",
+      "en": "Midnight",
+      "vi": "Nửa đêm"
+     }
+    ],
+    "explVi": "Suất chiếu **Digstown** vào cuối tuần có hai giờ chiếu: 9:00 P.M. và **12:00 A.M. (nửa đêm)** — giờ muộn nhất trong cả tuần phim.",
+    "explEn": "Digstown's weekend showings list two times, 9:00 P.M. and 12:00 A.M. (midnight) — the latest of the whole schedule.",
+    "qen": "What is the latest time that one can see a movie?",
+    "qvi": "Giờ chiếu phim muộn nhất là mấy giờ?"
+   }
+  ]
+ },
+ {
+  "range": "161-163",
+  "type": "Letter / Thư",
+  "title": "Bugs and Beans Coffee Shop — to Galoob Ceramics",
+  "passageEn": "Bugs and Beans Coffee Shop\nMuseum of Natural Sciences\n401 E. Rosser Ave., Columbus, OH 45021\nTel: (502) 235-5555 · coffee@mofns.com\n\nMr. Tomi Galoob\nGaloob Ceramics\nP.O. Box 356\nFrisbee, NY 02165\n\nDear Mr. Galoob,\n\nThank you for sending me a copy of your latest ceramics catalog. You have been sending us your catalog here at the museum for several years now, and I always look forward to reading it. I was amazed yet again at the variety and creativity that you have displayed in your work. Your vases and bowls are {{162|quite exquisite}}! They really do resemble the plants and animals that they are modeled after.\n\nI will probably purchase 50 or more of the ladybug bowls. They are {{163|perfect for holding sugar cubes}}. However, it was the scorpion cups that really grabbed my attention. According to the catalog, they are available in small, medium, and extra-large sizes. I am interested in purchasing approximately 25 of the extra-large scorpion cups. Please send me information on your available stock. {{161|I would appreciate receiving the information by e-mail}}. I look forward to hearing from you.\n\nSincerely,\nLinda Trent",
+  "passageVi": "Quán cà phê Bugs and Beans\nBảo tàng Khoa học Tự nhiên\n401 Đại lộ E. Rosser, Columbus, OH 45021\nĐT: (502) 235-5555 · coffee@mofns.com\n\nÔng Tomi Galoob\nGaloob Ceramics\nHộp thư 356\nFrisbee, NY 02165\n\nKính gửi ông Galoob,\n\nCảm ơn ông đã gửi cho tôi bản catalog gốm sứ mới nhất. Ông đã gửi catalog cho bảo tàng chúng tôi nhiều năm nay, và tôi luôn mong chờ được đọc nó. Tôi một lần nữa kinh ngạc trước sự đa dạng và sáng tạo trong tác phẩm của ông. Những chiếc bình và bát của ông {{162|thật tinh xảo}}! Chúng thực sự giống hệt loài cây và con vật mà chúng mô phỏng.\n\nTôi có lẽ sẽ mua 50 chiếc bát hình bọ rùa trở lên. Chúng {{163|rất hợp để đựng đường viên}}. Tuy nhiên, chính những chiếc cốc hình bọ cạp mới thực sự thu hút tôi. Theo catalog, chúng có các cỡ nhỏ, vừa và cực lớn. Tôi muốn mua khoảng 25 chiếc cốc bọ cạp cỡ cực lớn. Xin gửi cho tôi thông tin về hàng còn trong kho. {{161|Tôi mong nhận được thông tin qua email}}. Rất mong hồi âm từ ông.\n\nTrân trọng,\nLinda Trent",
+  "questions": [
+   {
+    "id": 161,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "A copy of the catalog",
+      "vi": "Một bản catalog"
+     },
+     {
+      "l": "B",
+      "en": "A reply by e-mail",
+      "vi": "Hồi âm qua email"
+     },
+     {
+      "l": "C",
+      "en": "A set of bowls",
+      "vi": "Một bộ bát"
+     },
+     {
+      "l": "D",
+      "en": "A large cup",
+      "vi": "Một chiếc cốc lớn"
+     }
+    ],
+    "explVi": "Bà Trent viết rõ “I would appreciate receiving the information by e-mail” — mong hồi âm qua email.",
+    "explEn": "She explicitly asks to receive the information by e-mail.",
+    "qen": "What does Linda Trent request?",
+    "qvi": "Bà Linda Trent yêu cầu điều gì?"
+   },
+   {
+    "id": 162,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Their products have become expensive.",
+      "vi": "Sản phẩm của họ đã trở nên đắt đỏ."
+     },
+     {
+      "l": "B",
+      "en": "Their products are very attractive.",
+      "vi": "Sản phẩm của họ rất hấp dẫn."
+     },
+     {
+      "l": "C",
+      "en": "Their products used to be better.",
+      "vi": "Sản phẩm của họ trước đây tốt hơn."
+     },
+     {
+      "l": "D",
+      "en": "Their products lack any variety.",
+      "vi": "Sản phẩm của họ thiếu sự đa dạng."
+     }
+    ],
+    "explVi": "Bà khen “quite exquisite”, “amazed at the variety and creativity” — đánh giá rất tích cực, không phải nhận xét về giá hay sự đơn điệu.",
+    "explEn": "She praises the products as “quite exquisite” and is “amazed” by their variety and creativity — a clearly positive opinion.",
+    "qen": "What is Linda Trent's opinion of Galoob Ceramics?",
+    "qvi": "Ý kiến của bà Linda Trent về Galoob Ceramics là gì?"
+   },
+   {
+    "id": 163,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Scorpion cups",
+      "vi": "Cốc hình bọ cạp"
+     },
+     {
+      "l": "B",
+      "en": "Ceramic vases",
+      "vi": "Bình gốm"
+     },
+     {
+      "l": "C",
+      "en": "Ladybug bowls",
+      "vi": "Bát hình bọ rùa"
+     },
+     {
+      "l": "D",
+      "en": "Small cups",
+      "vi": "Cốc nhỏ"
+     }
+    ],
+    "explVi": "Bà Trent viết: “I will probably purchase 50 or more of the ladybug bowls. They are perfect for holding sugar cubes.” — bát hình bọ rùa dùng để đựng đường viên.",
+    "explEn": "Linda Trent writes that the ladybug bowls “are perfect for holding sugar cubes.”",
+    "qen": "What will the coffee shop use to hold sugar?",
+    "qvi": "Quán cà phê sẽ dùng gì để đựng đường?"
+   }
+  ]
+ },
+ {
+  "range": "164-167",
+  "type": "Online chat / Trò chuyện trực tuyến",
+  "title": "Sam Kliff, Rob Martin, Tina Zakaria — Brochure Errors",
+  "passageEn": "Sam Kliff [9:41 A.M.] Hi, Rob & Tina. {{164|Sorry to bother you on a Saturday}}, but it's kind of an emergency. I've been looking over the brochures for the trade fair, and there are some serious errors in them. Some photos are wrong, and two of the pages are out of order.\n\nRob Martin [9:44 A.M.] And we need those for the trade fair by the 16th! This isn't good.\n\nTina Zakaria [9:44 A.M.] It's strange—somebody must have checked the proofs before they were printed. What happened?\n\nSam Kliff [9:45 A.M.] I haven't been able to trace the error yet because I can't get ahold of the people in charge. But my main concern is what to do now. Do we order 400 new copies?\n\nTina Zakaria [9:46 A.M.] I think we have to. We can't go to the fair without them.\n\nSam Kliff [9:55 A.M.] I just got off the phone with the printer. The only way to get the corrected brochures done in time is to pay for their rush service, which isn't cheap. But I can't do that without approval from someone higher up.\n\nRob Martin [9:56 A.M.] Yeah, {{167|we have to get approval from Peter}}. {{166|I'll call him}}. He's probably working from home today anyway.\n\nTina Zakaria [9:57 A.M.] Exactly, {{165|he almost never takes a day off}}. And I'm sure he'll OK it. It's our only option at this point.\n\nSam Kliff [9:58 A.M.] Thanks, guys. I appreciate your help. I'm checking over the digital file now, and I'll e-mail it to you both so you can look at it before I send it to the printer.\n\nTina Zakaria [9:59 A.M.] OK. You were right to let us know. And nice job catching those mistakes.\n\nRob Martin [10:00 A.M.] Yep. Sam, I'll call you when I get confirmation.",
+  "passageVi": "Sam Kliff [9:41] Chào Rob và Tina. {{164|Xin lỗi vì làm phiền vào thứ Bảy}}, nhưng khá khẩn cấp. Tôi vừa xem lại tờ rơi cho hội chợ thương mại, và có vài lỗi nghiêm trọng. Vài ảnh bị sai, và hai trang bị đảo thứ tự.\n\nRob Martin [9:44] Mà chúng ta cần chúng cho hội chợ trước ngày 16! Không ổn rồi.\n\nTina Zakaria [9:44] Lạ thật — lẽ ra phải có người kiểm tra bản in thử trước khi in. Chuyện gì đã xảy ra vậy?\n\nSam Kliff [9:45] Tôi chưa lần ra được lỗi vì không liên lạc được người phụ trách. Nhưng điều tôi lo nhất là bây giờ phải làm gì. Có nên đặt in 400 bản mới không?\n\nTina Zakaria [9:46] Tôi nghĩ phải làm vậy thôi. Không thể đi hội chợ mà thiếu tờ rơi.\n\nSam Kliff [9:55] Tôi vừa gọi điện xong với bên in. Cách duy nhất để có bản đã sửa kịp thời là trả thêm phí dịch vụ gấp, không hề rẻ. Nhưng tôi không thể làm vậy nếu chưa được cấp trên phê duyệt.\n\nRob Martin [9:56] Đúng, {{167|chúng ta cần Peter phê duyệt}}. {{166|Tôi sẽ gọi anh ấy}}. Chắc anh ấy đang làm việc ở nhà hôm nay.\n\nTina Zakaria [9:57] Đúng vậy, {{165|anh ấy gần như chẳng bao giờ nghỉ}}. Chắc chắn anh ấy sẽ đồng ý. Đây là lựa chọn duy nhất lúc này.\n\nSam Kliff [9:58] Cảm ơn hai người. Tôi đang kiểm tra lại file kỹ thuật số, sẽ email cho cả hai xem trước khi gửi cho bên in.\n\nTina Zakaria [9:59] Được. Bạn đã đúng khi báo cho chúng tôi biết. Làm tốt lắm khi phát hiện ra lỗi.\n\nRob Martin [10:00] Ừ. Sam, tôi sẽ gọi bạn khi có xác nhận.",
+  "questions": [
+   {
+    "id": 164,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Spending too much money",
+      "vi": "Tiêu quá nhiều tiền"
+     },
+     {
+      "l": "B",
+      "en": "Forgetting to check the brochures",
+      "vi": "Quên kiểm tra tờ rơi"
+     },
+     {
+      "l": "C",
+      "en": "Texting his coworkers on the weekend",
+      "vi": "Nhắn tin cho đồng nghiệp vào cuối tuần"
+     },
+     {
+      "l": "D",
+      "en": "Making mistakes on the brochures",
+      "vi": "Làm sai tờ rơi"
+     }
+    ],
+    "explVi": "Sam mở đầu bằng “Sorry to bother you on a Saturday” — xin lỗi vì nhắn tin làm phiền vào cuối tuần.",
+    "explEn": "Sam opens with “Sorry to bother you on a Saturday” — apologizing for texting on the weekend.",
+    "qen": "What does Sam Kliff apologize for?",
+    "qvi": "Sam Kliff xin lỗi vì điều gì?"
+   },
+   {
+    "id": 165,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "He is new to the company.",
+      "vi": "Anh ấy mới vào công ty."
+     },
+     {
+      "l": "B",
+      "en": "He often works on weekends.",
+      "vi": "Anh ấy thường làm việc vào cuối tuần."
+     },
+     {
+      "l": "C",
+      "en": "He has a low-level position.",
+      "vi": "Anh ấy giữ vị trí thấp."
+     },
+     {
+      "l": "D",
+      "en": "He worked on the brochures.",
+      "vi": "Anh ấy đã làm tờ rơi."
+     }
+    ],
+    "explVi": "Rob đoán Peter “probably working from home today”, và Tina xác nhận “he almost never takes a day off” — Peter thường làm việc cả cuối tuần.",
+    "explEn": "Rob guesses Peter is “probably working from home today,” and Tina confirms “he almost never takes a day off.”",
+    "qen": "What is suggested about Peter?",
+    "qvi": "Điều gì được gợi ý về Peter?"
+   },
+   {
+    "id": 166,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Call Peter",
+      "vi": "Gọi cho Peter"
+     },
+     {
+      "l": "B",
+      "en": "Call the printer",
+      "vi": "Gọi cho bên in"
+     },
+     {
+      "l": "C",
+      "en": "Correct the brochures",
+      "vi": "Sửa tờ rơi"
+     },
+     {
+      "l": "D",
+      "en": "Send the digital file",
+      "vi": "Gửi file kỹ thuật số"
+     }
+    ],
+    "explVi": "Rob nói rõ “I'll call him” (gọi Peter để xin phê duyệt).",
+    "explEn": "Rob explicitly says “I'll call him,” referring to Peter.",
+    "qen": "What will Rob Martin most likely do next?",
+    "qvi": "Rob Martin nhiều khả năng sẽ làm gì tiếp theo?"
+   },
+   {
+    "id": 167,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "They have to ask for approval.",
+      "vi": "Họ phải xin phê duyệt."
+     },
+     {
+      "l": "B",
+      "en": "They have to call another printer.",
+      "vi": "Họ phải gọi nhà in khác."
+     },
+     {
+      "l": "C",
+      "en": "The company has to go to the trade fair.",
+      "vi": "Công ty phải đi hội chợ."
+     },
+     {
+      "l": "D",
+      "en": "The company has to pay the extra cost.",
+      "vi": "Công ty phải trả thêm phí."
+     }
+    ],
+    "explVi": "Câu nói của Tina tiếp nối ý “chúng ta cần Peter phê duyệt” — “lựa chọn duy nhất” chính là việc xin phê duyệt từ Peter.",
+    "explEn": "Tina's remark follows directly from “we have to get approval from Peter” — the “only option” is getting that approval.",
+    "qen": "At 9:57 A.M., what does Tina Zakaria imply when she writes, “It's our only option at this point”?",
+    "qvi": "Lúc 9:57, Tina Zakaria ngụ ý gì khi viết “It's our only option at this point”?"
+   }
+  ]
+ },
+ {
+  "range": "168-171",
+  "type": "Advertisement / Quảng cáo",
+  "title": "Dream Vacation — Dazzle Tours",
+  "passageEn": "Dream Vacation\n\nGolden sandy beaches, deep blue seas, peace and quiet, and delicious food. Would you like to take the vacation of a lifetime? [1] Have you always thought about getting away on a {{168|romantic cruise}} but could never afford it? Now your dream can become a reality. [2] Get away with Dazzle Tours! [3] Why not take one of our mini-breaks? You will find that a seven-day break costs a lot less than you thought. [4] {{169|For a limited time, we are offering a Caribbean cruise}} with stops in Jamaica, Aruba, and Puerto Rico for only $799 (plus taxes). Service charges and visa fees are included.\n\nYour Dazzle Tour includes:\n· Round-trip airfare from Palm Beach to Belize\n· All meals and on-board entertainment\n· Choice of breakfasts, a buffet lunch, and a three-course dinner menu\n· Full use of our sports center, sauna, and casino\n· Jet-skiing and scuba diving\n· Savings on shopping\n· Book of discount coupons given to each passenger—can be used in any of our on-board shops and boutiques (excluding alcohol and tobacco)\n· Guided tours at destination cities with one of our expert local guides. All guides are fluent in English and extremely knowledgeable about their city.\n\nWith Dazzle Tours, every day is a new adventure! All tours last {{171|seven days and six nights}}. Departures are every Sunday until August 31. Reservations must be made two weeks in advance. {{170|Call one of our agents to reserve your place now}}!\n\nDazzle Tours: 1-800-455-2222",
+  "passageVi": "Kỳ nghỉ trong mơ\n\nBãi cát vàng, biển xanh thẳm, yên bình tĩnh lặng, và ẩm thực ngon miệng. Bạn có muốn tận hưởng kỳ nghỉ đẹp nhất đời? [1] Bạn từng mơ về một {{168|chuyến du thuyền lãng mạn}} nhưng chưa bao giờ đủ khả năng chi trả? Giờ đây giấc mơ có thể thành hiện thực. [2] Hãy đi cùng Dazzle Tours! [3] Sao không thử một trong những kỳ nghỉ ngắn của chúng tôi? Bạn sẽ thấy kỳ nghỉ bảy ngày có giá rẻ hơn nhiều so với bạn tưởng. [4] {{169|Trong thời gian có hạn, chúng tôi cung cấp chuyến du thuyền Caribbean}} ghé Jamaica, Aruba và Puerto Rico chỉ với 799 đô la (chưa thuế). Phí dịch vụ và visa đã được bao gồm.\n\nChuyến Dazzle Tour của bạn bao gồm:\n· Vé máy bay khứ hồi từ Palm Beach đến Belize\n· Toàn bộ bữa ăn và giải trí trên tàu\n· Chọn bữa sáng, buffet trưa, và thực đơn tối ba món\n· Sử dụng đầy đủ trung tâm thể thao, phòng xông hơi, và sòng bạc\n· Lướt ván máy và lặn biển\n· Ưu đãi mua sắm\n· Sổ phiếu giảm giá tặng mỗi hành khách — dùng tại các cửa hàng trên tàu (trừ rượu và thuốc lá)\n· Tour có hướng dẫn viên địa phương tại các thành phố đến. Tất cả hướng dẫn viên nói tiếng Anh lưu loát và am hiểu thành phố của họ.\n\nVới Dazzle Tours, mỗi ngày là một cuộc phiêu lưu mới! Mọi tour kéo dài {{171|bảy ngày sáu đêm}}. Khởi hành mỗi Chủ Nhật đến hết 31 tháng 8. Phải đặt chỗ trước hai tuần. {{170|Gọi ngay cho đại lý để giữ chỗ}}!\n\nDazzle Tours: 1-800-455-2222",
+  "questions": [
+   {
+    "id": 168,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "To advertise a buffet",
+      "vi": "Quảng cáo buffet"
+     },
+     {
+      "l": "B",
+      "en": "To offer store discounts",
+      "vi": "Ưu đãi giảm giá cửa hàng"
+     },
+     {
+      "l": "C",
+      "en": "To promote a cruise",
+      "vi": "Quảng bá một chuyến du thuyền"
+     },
+     {
+      "l": "D",
+      "en": "To introduce a casino",
+      "vi": "Giới thiệu sòng bạc"
+     }
+    ],
+    "explVi": "Toàn bộ quảng cáo xoay quanh việc chào bán chuyến du thuyền Caribbean của Dazzle Tours.",
+    "explEn": "The whole ad promotes the Dazzle Tours Caribbean cruise package.",
+    "qen": "What is the purpose of this advertisement?",
+    "qvi": "Mục đích của quảng cáo này là gì?"
+   },
+   {
+    "id": 169,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "[1]",
+      "vi": "[1]"
+     },
+     {
+      "l": "B",
+      "en": "[2]",
+      "vi": "[2]"
+     },
+     {
+      "l": "C",
+      "en": "[3]",
+      "vi": "[3]"
+     },
+     {
+      "l": "D",
+      "en": "[4]",
+      "vi": "[4]"
+     }
+    ],
+    "explVi": "Câu chèn “Nếu đặt ngay, bạn sẽ được giá rẻ hơn nữa” dẫn tự nhiên vào ưu đãi có thời hạn ngay sau đó — vị trí [4].",
+    "explEn": "“If you book now, you can get away for even less” leads naturally into the limited-time offer that follows — position [4].",
+    "qen": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? “If you book now, you can get away for even less.”",
+    "qvi": "Câu sau đây phù hợp nhất với vị trí nào? “If you book now, you can get away for even less.”"
+   },
+   {
+    "id": 170,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "By e-mailing Dazzle Tours",
+      "vi": "Gửi email cho Dazzle Tours"
+     },
+     {
+      "l": "B",
+      "en": "By visiting the airport",
+      "vi": "Đến sân bay"
+     },
+     {
+      "l": "C",
+      "en": "By telephoning an agent",
+      "vi": "Gọi điện cho đại lý"
+     },
+     {
+      "l": "D",
+      "en": "By faxing the company",
+      "vi": "Gửi fax cho công ty"
+     }
+    ],
+    "explVi": "Quảng cáo ghi “Call one of our agents to reserve your place now!”.",
+    "explEn": "The ad says “Call one of our agents to reserve your place now!”",
+    "qen": "How can reservations be made?",
+    "qvi": "Có thể đặt chỗ bằng cách nào?"
+   },
+   {
+    "id": 171,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Six days",
+      "vi": "Sáu ngày"
+     },
+     {
+      "l": "B",
+      "en": "One week",
+      "vi": "Một tuần"
+     },
+     {
+      "l": "C",
+      "en": "Two weeks",
+      "vi": "Hai tuần"
+     },
+     {
+      "l": "D",
+      "en": "One month",
+      "vi": "Một tháng"
+     }
+    ],
+    "explVi": "“Seven days and six nights” ≈ một tuần.",
+    "explEn": "“Seven days and six nights” is approximately one week.",
+    "qen": "How long does a Dazzle Tour last?",
+    "qvi": "Một tour Dazzle kéo dài bao lâu?"
+   }
+  ]
+ },
+ {
+  "range": "172-175",
+  "type": "Web article / Bài viết web",
+  "title": "Tips for Shopping Online",
+  "passageEn": "Tips for Shopping Online\n\nShopping online gives you access to thousands of goods from companies around the world. However, some more unfortunate individuals find that the goods they ordered look nothing like the pictures, arrive damaged, or don't arrive at all. Here are some tips to help protect yourself when you shop on the Web.\n\n· Before placing your first order, {{172|research other people's opinions of the company}}. There are many websites dedicated to reviewing online companies with satisfaction surveys, and customer reviews and comments.\n· Next, read all the available information the company provides, including the fine print. Make sure you read and understand the return policy. Check whether you will have to pay for shipping if you need to return the goods.\n· Always include shipping costs and sales tax in the final price when comparing costs. If the cheapest item has the most expensive shipping fees, it might not be the bargain it seems to be.\n· Keep records of your order. Print out your e-receipt, or save it to a file on your hard drive. {{173|This proof-of-purchase will help you in the event that your item is damaged}} or not what you ordered.\n\nIf you {{174|encounter}} any problems with an online company, {{175|contact a consumer advocacy group}}. You can easily find telephone numbers for such groups on the Internet.",
+  "passageVi": "Mẹo mua sắm trực tuyến\n\nMua sắm trực tuyến giúp bạn tiếp cận hàng ngàn sản phẩm từ các công ty khắp thế giới. Tuy nhiên, một số người kém may mắn thấy rằng hàng họ đặt chẳng giống hình chút nào, bị hư hỏng khi đến, hoặc không hề đến. Dưới đây là vài mẹo giúp bạn tự bảo vệ mình khi mua sắm trên mạng.\n\n· Trước khi đặt đơn hàng đầu tiên, {{172|hãy tìm hiểu ý kiến người khác về công ty đó}}. Có nhiều trang web chuyên đánh giá các công ty trực tuyến kèm khảo sát mức độ hài lòng, đánh giá và bình luận của khách hàng.\n· Tiếp theo, đọc kỹ mọi thông tin công ty cung cấp, kể cả phần chữ nhỏ. Đảm bảo bạn đọc và hiểu chính sách đổi trả. Kiểm tra xem bạn có phải trả phí vận chuyển nếu cần trả hàng không.\n· Luôn cộng cả phí vận chuyển và thuế vào giá cuối khi so sánh giá cả. Nếu món hàng rẻ nhất lại có phí vận chuyển đắt nhất, có thể nó không hời như bạn nghĩ.\n· Lưu lại hồ sơ đơn hàng. In hóa đơn điện tử ra, hoặc lưu vào file trên ổ cứng. {{173|Bằng chứng mua hàng này sẽ giúp ích nếu sản phẩm bị hỏng}} hoặc không đúng như đặt.\n\nNếu {{174|gặp vấn đề}} với một công ty trực tuyến, hãy {{175|liên hệ một tổ chức bảo vệ người tiêu dùng}}. Bạn có thể dễ dàng tìm số điện thoại của các tổ chức này trên Internet.",
+  "questions": [
+   {
+    "id": 172,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Ask about discounts",
+      "vi": "Hỏi về giảm giá"
+     },
+     {
+      "l": "B",
+      "en": "Compare similar websites",
+      "vi": "So sánh các trang web tương tự"
+     },
+     {
+      "l": "C",
+      "en": "Check the pictures of the item",
+      "vi": "Kiểm tra hình ảnh sản phẩm"
+     },
+     {
+      "l": "D",
+      "en": "Find out about shipping costs",
+      "vi": "Tìm hiểu phí vận chuyển"
+     }
+    ],
+    "explVi": "Bài viết khuyên “research other people's opinions of the company” qua các trang đánh giá — tức so sánh/tìm hiểu qua nhiều nguồn trước khi mua.",
+    "explEn": "The article advises researching other people's opinions via review websites before ordering.",
+    "qen": "What should you do before making an online purchase?",
+    "qvi": "Bạn nên làm gì trước khi mua hàng trực tuyến?"
+   },
+   {
+    "id": 173,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "For recycling purposes",
+      "vi": "Để tái chế"
+     },
+     {
+      "l": "B",
+      "en": "In case there are disputes",
+      "vi": "Phòng khi có tranh chấp"
+     },
+     {
+      "l": "C",
+      "en": "To show for the shipping",
+      "vi": "Để xuất trình cho việc vận chuyển"
+     },
+     {
+      "l": "D",
+      "en": "To prove his or her identity",
+      "vi": "Để chứng minh danh tính"
+     }
+    ],
+    "explVi": "Hóa đơn là “proof-of-purchase” giúp ích “in the event your item is damaged or not what you ordered” — tức khi có tranh chấp/khiếu nại.",
+    "explEn": "The receipt serves as proof-of-purchase for disputes when an item is damaged or incorrect.",
+    "qen": "Why should an online shopper keep the receipts?",
+    "qvi": "Vì sao người mua hàng trực tuyến nên giữ hóa đơn?"
+   },
+   {
+    "id": 174,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "face",
+      "vi": "đối mặt với"
+     },
+     {
+      "l": "B",
+      "en": "solve",
+      "vi": "giải quyết"
+     },
+     {
+      "l": "C",
+      "en": "cause",
+      "vi": "gây ra"
+     },
+     {
+      "l": "D",
+      "en": "dislike",
+      "vi": "không thích"
+     }
+    ],
+    "explVi": "“Encounter problems” = gặp phải/đối mặt với vấn đề — gần nghĩa nhất với “face”.",
+    "explEn": "“Encounter problems” means to face/come across problems, closest to “face.”",
+    "qen": "The word “encounter” in paragraph 6, line 1, is closest in meaning to",
+    "qvi": "Từ “encounter” ở đoạn 6, dòng 1, gần nghĩa nhất với"
+   },
+   {
+    "id": 175,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "The review websites",
+      "vi": "Các trang web đánh giá"
+     },
+     {
+      "l": "B",
+      "en": "The shipping company",
+      "vi": "Công ty vận chuyển"
+     },
+     {
+      "l": "C",
+      "en": "A customer watchdog",
+      "vi": "Tổ chức giám sát người tiêu dùng"
+     },
+     {
+      "l": "D",
+      "en": "Your Internet provider",
+      "vi": "Nhà cung cấp Internet"
+     }
+    ],
+    "explVi": "Bài viết khuyên liên hệ “a consumer advocacy group” — một tổ chức bảo vệ/giám sát quyền lợi người tiêu dùng.",
+    "explEn": "The article advises contacting a consumer advocacy group.",
+    "qen": "Whom should you contact if you have problems?",
+    "qvi": "Nên liên hệ ai nếu gặp vấn đề?"
+   }
+  ]
+ },
+ {
+  "range": "176-180",
+  "type": "Notice / Thông báo",
+  "title": "City Park Board Open Meeting",
+  "passageEn": "All local citizens are invited to the City Park Board open meeting!\n\nThe City Park Board open meeting is scheduled for Wednesday, October 27, at 6 P.M. in {{176|conference room B of the public library}}. Current agenda items include the following: regular committee reports, funding for the purchase of snow blowers, construction of a temporary outdoor ice rink for the winter, and next month's Winterfest Bonfire Ball to raise money for equipment for the children's playground.\n\nSnow blowers will enable Mendez Park to stay open all year round, even in the heaviest snow. Now with the park open even in the winter too, we have decided to {{177|convert the central pond into an ice rink}}. Local businessman Hans Feine has donated $10,000 toward the cost. Winterfest Bonfire Ball tickets will be on sale at the meeting. They always sell out fast, so coming to the meeting will increase your chances of getting tickets.\n\nIt is not necessary to notify us of your attendance in advance. However, if you would like to add an item to the agenda, {{178|speak at the meeting}}, or present a report on behalf of a local organization, please contact Glen Tuber at the city office, at 345-4444, extension 221, before October 5. All speakers must receive authorization before the meeting, so it is essential that you contact us in advance. We hope to see you there!\n\nMeeting Agenda: I. Call to Order, Approval of Agenda — II. Committee Reports: A. Park Police Report, B. Planning Committee Report — III. Purchase of Snow Blowers — IV. {{180|Cedar Lake Beach Improvements}} — V. {{179|Ice Rink Construction}} — VI. Winterfest Bonfire Ball (ticket sales) — VII. Adjournment",
+  "passageVi": "Mời toàn thể cư dân địa phương tham dự cuộc họp mở của Ban Quản lý Công viên Thành phố!\n\nCuộc họp mở của Ban Quản lý Công viên Thành phố được ấn định vào thứ Tư, 27 tháng 10, lúc 6 giờ tối tại {{176|phòng họp B của thư viện công cộng}}. Các nội dung nghị sự hiện tại gồm: báo cáo định kỳ của các ủy ban, kinh phí mua máy thổi tuyết, xây dựng sân trượt băng ngoài trời tạm thời cho mùa đông, và Đêm hội Lửa trại Winterfest tháng tới để gây quỹ trang thiết bị cho sân chơi trẻ em.\n\nMáy thổi tuyết sẽ giúp Công viên Mendez mở cửa quanh năm, kể cả khi tuyết dày nhất. Với việc công viên mở cửa cả mùa đông, chúng tôi đã quyết định {{177|chuyển ao nước trung tâm thành sân trượt băng}}. Doanh nhân địa phương Hans Feine đã quyên góp 10.000 đô la cho chi phí này. Vé Đêm hội Lửa trại Winterfest sẽ được bán tại cuộc họp. Vé luôn bán hết nhanh, nên đến dự họp sẽ tăng cơ hội mua được vé.\n\nKhông cần báo trước việc tham dự. Tuy nhiên, nếu muốn thêm mục vào nghị sự, {{178|phát biểu tại cuộc họp}}, hoặc trình bày báo cáo thay mặt một tổ chức địa phương, xin liên hệ Glen Tuber tại văn phòng thành phố, số 345-4444, số nội bộ 221, trước ngày 5 tháng 10. Mọi người phát biểu đều phải được cấp phép trước cuộc họp, nên việc liên hệ trước là bắt buộc. Hẹn gặp quý vị tại buổi họp!\n\nChương trình họp: I. Khai mạc, thông qua chương trình — II. Báo cáo các ủy ban: A. Báo cáo Cảnh sát Công viên, B. Báo cáo Ủy ban Quy hoạch — III. Mua máy thổi tuyết — IV. {{180|Cải tạo bãi biển Cedar Lake}} — V. {{179|Xây dựng sân trượt băng}} — VI. Đêm hội Lửa trại Winterfest (bán vé) — VII. Bế mạc",
+  "questions": [
+   {
+    "id": 176,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "At the ice rink",
+      "vi": "Tại sân trượt băng"
+     },
+     {
+      "l": "B",
+      "en": "In the library",
+      "vi": "Tại thư viện"
+     },
+     {
+      "l": "C",
+      "en": "At the office",
+      "vi": "Tại văn phòng"
+     },
+     {
+      "l": "D",
+      "en": "In the park",
+      "vi": "Tại công viên"
+     }
+    ],
+    "explVi": "Thông báo ghi rõ họp tại “conference room B of the public library”.",
+    "explEn": "The notice states the meeting is in “conference room B of the public library.”",
+    "qen": "Where will the park board meet?",
+    "qvi": "Ban quản lý công viên sẽ họp ở đâu?"
+   },
+   {
+    "id": 177,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Hiring a snow removal company",
+      "vi": "Thuê công ty dọn tuyết"
+     },
+     {
+      "l": "B",
+      "en": "Keeping it open throughout the year",
+      "vi": "Mở cửa quanh năm"
+     },
+     {
+      "l": "C",
+      "en": "Constructing an ice rink",
+      "vi": "Xây sân trượt băng"
+     },
+     {
+      "l": "D",
+      "en": "Installing a new pond",
+      "vi": "Lắp đặt ao mới"
+     }
+    ],
+    "explVi": "Thông báo nói “we have decided to convert the central pond into an ice rink” — thay đổi lớn nhất được nêu là xây sân trượt băng (ao có sẵn, không phải lắp ao mới).",
+    "explEn": "The key planned change described is converting the existing pond into an ice rink — not installing a new pond.",
+    "qen": "What change is planned regarding the park?",
+    "qvi": "Thay đổi nào được lên kế hoạch cho công viên?"
+   },
+   {
+    "id": 178,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "People wanting to attend the meeting",
+      "vi": "Người muốn dự họp"
+     },
+     {
+      "l": "B",
+      "en": "People wanting to buy festival tickets",
+      "vi": "Người muốn mua vé lễ hội"
+     },
+     {
+      "l": "C",
+      "en": "People wanting to speak at the meeting",
+      "vi": "Người muốn phát biểu tại cuộc họp"
+     },
+     {
+      "l": "D",
+      "en": "People wanting to borrow library books",
+      "vi": "Người muốn mượn sách thư viện"
+     }
+    ],
+    "explVi": "Thông báo ghi: liên hệ Glen Tuber nếu muốn “add an item to the agenda, speak at the meeting, or present a report”.",
+    "explEn": "The notice says to contact Glen Tuber to add an agenda item, speak at the meeting, or present a report.",
+    "qen": "Which people should call Glen Tuber?",
+    "qvi": "Những ai nên gọi cho Glen Tuber?"
+   },
+   {
+    "id": 179,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "10 minutes",
+      "vi": "10 phút"
+     },
+     {
+      "l": "B",
+      "en": "20 minutes",
+      "vi": "20 phút"
+     },
+     {
+      "l": "C",
+      "en": "30 minutes",
+      "vi": "30 phút"
+     },
+     {
+      "l": "D",
+      "en": "60 minutes",
+      "vi": "60 phút"
+     }
+    ],
+    "explVi": "⚠️ Chương trình họp gốc liệt kê đủ các mục (Call to Order, Committee Reports, Purchase of Snow Blowers, Cedar Lake Beach Improvements, **Ice Rink Construction**, Winterfest Bonfire Ball, Adjournment) nhưng cột thời lượng cụ thể (phút) vẫn chưa đọc rõ được dù đã thử nhiều lần. (C) là suy đoán hợp lý nhất, chưa xác nhận 100%.",
+    "explEn": "⚠️ The actual agenda's item list is confirmed (including “Ice Rink Construction”), but the exact minutes column could not be read reliably despite multiple attempts. (C) remains a reasoned best guess.",
+    "qen": "How long is the discussion of the ice rink expected to last?",
+    "qvi": "Phần thảo luận về sân trượt băng dự kiến kéo dài bao lâu?"
+   },
+   {
+    "id": 180,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Cedar Lake Beach Improvements",
+      "vi": "Cải tạo bãi biển Cedar Lake"
+     },
+     {
+      "l": "B",
+      "en": "Purchase of Snow Blowers",
+      "vi": "Mua máy thổi tuyết"
+     },
+     {
+      "l": "C",
+      "en": "Winterfest Bonfire Ball",
+      "vi": "Đêm hội Lửa trại Winterfest"
+     },
+     {
+      "l": "D",
+      "en": "Committee Reports",
+      "vi": "Báo cáo của các ủy ban"
+     }
+    ],
+    "explVi": "**Xác nhận qua bảng chương trình họp gốc.** Chương trình họp thực tế liệt kê mục “IV. Cedar Lake Beach Improvements” — mục này KHÔNG xuất hiện trong thông báo ban đầu (vốn chỉ nhắc báo cáo ủy ban, máy thổi tuyết, sân trượt băng, Winterfest) — xác nhận đây là mục được thêm vào.",
+    "explEn": "Confirmed via the actual meeting agenda: it lists “IV. Cedar Lake Beach Improvements,” an item never mentioned in the original notice — confirming it was added.",
+    "qen": "Which item was added to the original agenda?",
+    "qvi": "Mục nào được thêm vào chương trình họp ban đầu?"
+   }
+  ]
+ },
+ {
+  "range": "181-185",
+  "type": "Memo & E-mail / Thư nội bộ và email",
+  "title": "Sunshine Holidays — Marketing Competition",
+  "passageEn": "MEMO\nTo: All Branch Managers\nFrom: Sunshine Holidays Marketing\nRe: Customer Preferences\n\nAs a result of recent research, we have decided to launch a staff competition.\n\nMore than 1,000 British people were recently surveyed by Sunshine Holidays about their {{181|vacation plans for the coming summer}}. About 200 people in each of five different age ranges were surveyed. They were asked to indicate which countries they planned to visit out of four possible choices: Italy, France, England, and Spain. It seems that as they get older, people tend to choose not to travel overseas. Participants over 55 chose Britain as their first choice to visit. When asked why, they gave several reasons, including fears about health problems and access to medical treatment in a foreign country, worries about communicating in a foreign language, and the desire to spend time with their grandchildren during school vacations. However, overall, France was the most popular destination for all age groups. This is because of its close location to Britain.\n\nWe want to increase the number of older customers visiting Spain (target A) and the number of younger visitors traveling within Britain (target B). For this reason, {{182|we are launching a staff competition}}. Please submit your ideas to increase the number of customers in these two groups. All staff at the branch with the winning ideas will get {{183|five additional paid vacation days}}. You have until March 27 to make your submissions. Good luck!\n\n---\n\nTo: Nigel Roy; Yasmin Farhad; Greg [colleague]\nFrom: Olivia Benn <obenn@sunshineholidays.com>\nSubject: Competition\nDate: March 20\n\nHello, team,\n\nThis is to follow up on our brief discussion of the recent memo from Martin about the staff competition. I think it makes sense to divide into two teams: {{185|Greg and I will work on target A}}; Nigel and Yasmin, I'd like you to {{184|tackle target B}}. Let's establish each team tomorrow at 9:30 and start brainstorming. Then on Friday each team will make a presentation and we'll give each other feedback. My assistant will combine the best ideas into a slide deck, which I'll send on Monday. Let's win this!\n\nOlivia Benn, Branch Manager",
+  "passageVi": "BẢN GHI NHỚ\nĐến: Toàn thể Quản lý Chi nhánh\nTừ: Bộ phận Marketing Sunshine Holidays\nV/v: Sở thích khách hàng\n\nDựa trên nghiên cứu gần đây, chúng tôi quyết định tổ chức một cuộc thi cho nhân viên.\n\nHơn 1.000 người Anh vừa được Sunshine Holidays khảo sát về {{181|kế hoạch nghỉ hè sắp tới}}. Khoảng 200 người trong mỗi 5 nhóm tuổi khác nhau đã được khảo sát. Họ được hỏi sẽ chọn đi nước nào trong 4 lựa chọn: Ý, Pháp, Anh, và Tây Ban Nha. Có vẻ càng lớn tuổi, người ta càng ít chọn đi du lịch nước ngoài. Người tham gia trên 55 tuổi chọn nước Anh là lựa chọn hàng đầu. Khi được hỏi lý do, họ đưa ra nhiều lý do, gồm lo ngại về sức khỏe và khả năng tiếp cận y tế ở nước ngoài, lo lắng về giao tiếp bằng ngoại ngữ, và mong muốn ở bên cháu trong kỳ nghỉ học. Tuy nhiên, nhìn chung, Pháp là điểm đến được ưa chuộng nhất ở mọi nhóm tuổi, do vị trí gần nước Anh.\n\nChúng tôi muốn tăng số khách lớn tuổi đi Tây Ban Nha (mục tiêu A) và số khách trẻ đi du lịch trong nước Anh (mục tiêu B). Vì vậy, {{182|chúng tôi tổ chức một cuộc thi cho nhân viên}}. Hãy nộp ý tưởng để tăng lượng khách ở hai nhóm này. Toàn bộ nhân viên chi nhánh có ý tưởng thắng cuộc sẽ được thưởng thêm {{183|5 ngày nghỉ phép có lương}}. Hạn nộp bài là 27 tháng 3. Chúc may mắn!\n\n---\n\nĐến: Nigel Roy; Yasmin Farhad; Greg [đồng nghiệp]\nTừ: Olivia Benn\nChủ đề: Cuộc thi\nNgày: 20 tháng 3\n\nChào cả nhóm,\n\nĐây là email tiếp nối cuộc trao đổi ngắn của chúng ta về bản ghi nhớ của Martin về cuộc thi nhân viên. Tôi nghĩ nên chia làm hai nhóm: {{185|Greg và tôi sẽ phụ trách mục tiêu A}}; Nigel và Yasmin, tôi muốn hai bạn {{184|đảm nhận mục tiêu B}}. Hãy lập nhóm vào 9:30 sáng mai và bắt đầu lên ý tưởng. Đến thứ Sáu mỗi nhóm sẽ thuyết trình và góp ý cho nhau. Trợ lý của tôi sẽ tổng hợp các ý tưởng hay nhất vào một bộ slide, tôi sẽ gửi vào thứ Hai. Cùng nhau chiến thắng nhé!\n\nOlivia Benn, Quản lý Chi nhánh",
+  "questions": [
+   {
+    "id": 181,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Their vacation plans",
+      "vi": "Kế hoạch nghỉ mát của họ"
+     },
+     {
+      "l": "B",
+      "en": "Countries they had visited",
+      "vi": "Những nước họ đã từng đến"
+     },
+     {
+      "l": "C",
+      "en": "Ski resorts in Europe",
+      "vi": "Khu nghỉ trượt tuyết ở châu Âu"
+     },
+     {
+      "l": "D",
+      "en": "Concerns about overseas travel",
+      "vi": "Lo ngại về du lịch nước ngoài"
+     }
+    ],
+    "explVi": "Bản ghi nhớ nói khảo sát “about their vacation plans for the coming summer”.",
+    "explEn": "The memo says people were surveyed about their vacation plans for the coming summer.",
+    "qen": "What were the people mainly surveyed about?",
+    "qvi": "Người tham gia khảo sát chủ yếu được hỏi về điều gì?"
+   },
+   {
+    "id": 182,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "To describe Sunshine Holidays",
+      "vi": "Giới thiệu về Sunshine Holidays"
+     },
+     {
+      "l": "B",
+      "en": "To introduce a marketing contest",
+      "vi": "Giới thiệu một cuộc thi marketing"
+     },
+     {
+      "l": "C",
+      "en": "To announce the winner of a contest",
+      "vi": "Công bố người thắng cuộc thi"
+     },
+     {
+      "l": "D",
+      "en": "To discuss new countries to visit",
+      "vi": "Bàn về các nước mới để đến"
+     }
+    ],
+    "explVi": "Mục đích chính: thông báo phát động “a staff competition” dựa trên kết quả khảo sát.",
+    "explEn": "The main purpose is to announce the staff competition based on the survey results.",
+    "qen": "Why was the memo written?",
+    "qvi": "Vì sao bản ghi nhớ này được viết?"
+   },
+   {
+    "id": 183,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Only one person can win.",
+      "vi": "Chỉ một người có thể thắng."
+     },
+     {
+      "l": "B",
+      "en": "The prize is extra time off.",
+      "vi": "Giải thưởng là thêm ngày nghỉ."
+     },
+     {
+      "l": "C",
+      "en": "It involves marketing to one age group.",
+      "vi": "Chỉ nhắm tới một nhóm tuổi."
+     },
+     {
+      "l": "D",
+      "en": "A deadline has not been chosen yet.",
+      "vi": "Chưa có hạn nộp bài."
+     }
+    ],
+    "explVi": "Giải thưởng là “five additional paid vacation days” — 5 ngày nghỉ phép có lương thêm.",
+    "explEn": "The prize is “five additional paid vacation days.”",
+    "qen": "What is stated about the contest?",
+    "qvi": "Điều gì được nêu về cuộc thi?"
+   },
+   {
+    "id": 184,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "finish",
+      "vi": "hoàn thành"
+     },
+     {
+      "l": "B",
+      "en": "explain",
+      "vi": "giải thích"
+     },
+     {
+      "l": "C",
+      "en": "handle",
+      "vi": "đảm nhận, xử lý"
+     },
+     {
+      "l": "D",
+      "en": "challenge",
+      "vi": "thách thức"
+     }
+    ],
+    "explVi": "**Xác nhận qua email gốc đầy đủ.** Người gửi là Olivia Benn, nội dung: “Greg and I will work on target A; Nigel and Yasmin, I'd like you to **tackle** target B.” **Tackle** = đảm nhận/xử lý — gần nghĩa nhất với **handle**.",
+    "explEn": "Confirmed via the full e-mail: sender Olivia Benn writes “Greg and I will work on target A; Nigel and Yasmin, I'd like you to tackle target B.” “Tackle” is closest to “handle.”",
+    "qen": "In the e-mail, the word “tackle” in line 3 is closest in meaning to",
+    "qvi": "Trong email, từ “tackle” ở dòng 3 gần nghĩa nhất với"
+   },
+   {
+    "id": 185,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Prepare slides on marketing ideas",
+      "vi": "Chuẩn bị slide ý tưởng marketing"
+     },
+     {
+      "l": "B",
+      "en": "Give a presentation to the marketing department",
+      "vi": "Thuyết trình cho bộ phận marketing"
+     },
+     {
+      "l": "C",
+      "en": "Work on ideas for marketing trips to young people",
+      "vi": "Nghĩ ý tưởng quảng bá du lịch cho giới trẻ"
+     },
+     {
+      "l": "D",
+      "en": "Think of ways to market Spanish vacations",
+      "vi": "Nghĩ cách quảng bá du lịch Tây Ban Nha"
+     }
+    ],
+    "explVi": "**Xác nhận qua email gốc.** Người gửi email chính là **Olivia Benn** (Branch Manager), và bà tự xếp mình vào nhóm phụ trách **target A** (“Greg and I will work on target A”) — mục tiêu A là tăng khách lớn tuổi đi **Tây Ban Nha**. Vậy tuần này bà sẽ nghĩ cách quảng bá du lịch Tây Ban Nha.",
+    "explEn": "Confirmed: the e-mail sender is Olivia Benn herself, who assigns herself to target A (“Greg and I will work on target A”) — target A being older customers visiting Spain.",
+    "qen": "What will Olivia Benn do this week?",
+    "qvi": "Bà Olivia Benn sẽ làm gì trong tuần này?"
+   }
+  ]
+ },
+ {
+  "range": "186-190",
+  "type": "Web page & Form & Article / Trang web, đơn và bài báo",
+  "title": "Lakeland College — Drama Club Event",
+  "passageEn": "http://www.lakelandcollege.com\nLakeland College — STUDENT-ORGANIZED EVENTS\n\nAuthorized Events on Campus\nThe Student Event Committee governs plans for activities or events on campus that are sponsored by a recognized student organization. Note that authorized events require a faculty sponsor who will both attend the event and help with the planning process. After arranging for a sponsor, please fill out the application here to get authorization. The application must be submitted at least four weeks before the event so the university can oversee planning issues for student organizations. Processing of applications normally takes five to ten days.\n\nNot all student-organized events must be authorized. For example, you do not need permission for weekly organization meetings, practices, or organization-sponsored trips. If you will charge admission, if you serve food or alcohol, or if your event is open to the public, then you must obtain prior authorization.\n\nReserving Event Space\nAs soon as your student group has identified a date and time when you would like to host your event, as well as back-up dates and times, you will need to reserve a place to hold your event. Large venues on campus must be {{186|reserved six weeks ahead of time}} (at a minimum). Make sure you check on the availability of your desired location before you get too far into the event planning process.\n\n---\nAPPLICATION FOR STUDENT-ORGANIZED EVENT\nName of applicant: Binu Sharma\nApplicant's e-mail address: binu@lakelandc.edu\nOrganization requesting authorization: Drama Club\n{{188|Faculty sponsor: Lara Miller}}\nEvent description: Performance of three one-act plays, each about 45 minutes\nRequested space: Student Center 2nd-floor auditorium\nDate and time: May 2, 7:00 P.M.\nIs your event open to the public? Yes\nWill you charge admission? No\nWill you serve food or drink? No\n\n---\nLending Actors and Directors to Put On a Show\n\nGood news is coming to Lakeland College this May, when the Lakeland College Drama Club will perform three one-act plays at the Student Center auditorium. Anyone attending this year's production of the drama club's works can expect to be entertained—the shows are directed by student Javier Nunes, who has worked with the actors for months to sharpen their performances. The cast rehearses several times a week, and each has put a lot of energy into perfecting their delivery, songs, and stage presence.\n\nDrama Club president Binu Sharma explains that this will be the club's biggest production yet: “We've moved to a bigger venue because last year's event was {{190|standing room only}}.”\n\n{{189|Come to the Student Center auditorium on May 2 at 7:00 P.M. and support}} some of Lakeland's own talents. There's also a reception afterward, and you won't want to miss it!",
+  "passageVi": "http://www.lakelandcollege.com\nĐại học Lakeland — SỰ KIỆN DO SINH VIÊN TỔ CHỨC\n\nSự kiện được cấp phép trong khuôn viên trường\nỦy ban Sự kiện Sinh viên quản lý kế hoạch cho các hoạt động/sự kiện trong khuôn viên trường do một tổ chức sinh viên được công nhận bảo trợ. Lưu ý các sự kiện được cấp phép cần có giảng viên bảo trợ, người sẽ vừa tham dự sự kiện vừa hỗ trợ quá trình lên kế hoạch. Sau khi sắp xếp được người bảo trợ, vui lòng điền đơn tại đây để được cấp phép. Đơn phải được nộp trước sự kiện ít nhất bốn tuần để trường có thể giám sát các vấn đề lên kế hoạch cho tổ chức sinh viên. Xử lý đơn thường mất từ năm đến mười ngày.\n\nKhông phải mọi sự kiện do sinh viên tổ chức đều cần cấp phép. Ví dụ, bạn không cần xin phép cho các buổi họp định kỳ, buổi tập, hay các chuyến đi do tổ chức tài trợ. Nếu bạn thu phí vào cửa, phục vụ đồ ăn hoặc rượu, hoặc sự kiện mở cửa cho công chúng, thì bắt buộc phải xin phép trước.\n\nĐặt chỗ tổ chức sự kiện\nNgay khi nhóm sinh viên đã chọn được ngày giờ tổ chức (cùng ngày giờ dự phòng), bạn cần đặt chỗ để tổ chức sự kiện. Các địa điểm lớn trong khuôn viên trường {{186|phải được đặt trước ít nhất sáu tuần}}. Hãy kiểm tra tình trạng sẵn có của địa điểm mong muốn trước khi tiến quá sâu vào việc lên kế hoạch.\n\n---\nĐƠN XIN TỔ CHỨC SỰ KIỆN SINH VIÊN\nTên người nộp đơn: Binu Sharma\nEmail người nộp đơn: binu@lakelandc.edu\nTổ chức xin cấp phép: Câu lạc bộ Kịch\n{{188|Giảng viên bảo trợ: Lara Miller}}\nMô tả sự kiện: Biểu diễn ba vở kịch một màn, mỗi vở khoảng 45 phút\nĐịa điểm yêu cầu: Giảng đường tầng 2 Trung tâm Sinh viên\nNgày giờ: 2 tháng 5, 19:00\nSự kiện có mở cho công chúng không? Có\nCó thu phí vào cửa không? Không\nCó phục vụ đồ ăn/thức uống không? Không\n\n---\nMượn diễn viên và đạo diễn để dựng một vở diễn\n\nTin vui sắp đến với Đại học Lakeland vào tháng 5 này, khi Câu lạc bộ Kịch Lakeland sẽ biểu diễn ba vở kịch một màn tại giảng đường Trung tâm Sinh viên. Bất kỳ ai đến xem tác phẩm của câu lạc bộ kịch năm nay đều có thể mong đợi được giải trí — các vở diễn do sinh viên Javier Nunes đạo diễn, người đã làm việc với diễn viên suốt nhiều tháng để mài giũa diễn xuất. Dàn diễn viên tập luyện nhiều lần mỗi tuần, và ai cũng dồn nhiều tâm sức để hoàn thiện lời thoại, các bài hát, và phong thái trên sân khấu.\n\nChủ tịch Câu lạc bộ Kịch, Binu Sharma, giải thích đây sẽ là buổi diễn lớn nhất từ trước đến nay của câu lạc bộ: “Chúng tôi đã chuyển sang địa điểm lớn hơn vì sự kiện năm ngoái đông đến mức {{190|chỉ còn chỗ đứng}}.”\n\n{{189|Hãy đến giảng đường Trung tâm Sinh viên vào ngày 2 tháng 5 lúc 19:00 để ủng hộ}} những tài năng của Lakeland. Sau đó còn có tiệc chiêu đãi, đừng bỏ lỡ nhé!",
+  "questions": [
+   {
+    "id": 186,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "5 days",
+      "vi": "5 ngày"
+     },
+     {
+      "l": "B",
+      "en": "10 days",
+      "vi": "10 ngày"
+     },
+     {
+      "l": "C",
+      "en": "4 weeks",
+      "vi": "4 tuần"
+     },
+     {
+      "l": "D",
+      "en": "6 weeks",
+      "vi": "6 tuần"
+     }
+    ],
+    "explVi": "Trang web ghi “Large venues on campus must be reserved six weeks ahead of time”.",
+    "explEn": "The page states large venues must be reserved six weeks ahead of time.",
+    "qen": "How far in advance must event locations be booked?",
+    "qvi": "Địa điểm tổ chức sự kiện phải được đặt trước bao lâu?"
+   },
+   {
+    "id": 187,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Because it is organized by students",
+      "vi": "Vì do sinh viên tổ chức"
+     },
+     {
+      "l": "B",
+      "en": "Because it charges admission",
+      "vi": "Vì có thu phí vào cửa"
+     },
+     {
+      "l": "C",
+      "en": "Because it is open to the public",
+      "vi": "Vì mở cửa cho công chúng"
+     },
+     {
+      "l": "D",
+      "en": "Because it includes a meal",
+      "vi": "Vì có phục vụ bữa ăn"
+     }
+    ],
+    "explVi": "Đơn ghi sự kiện “mở cho công chúng: Có”, và chính sách nêu rõ sự kiện mở công chúng thì cần cấp phép; đơn cũng ghi không thu phí, không phục vụ đồ ăn.",
+    "explEn": "The form marks the event as open to the public, and the policy requires authorization for public events; the form shows no admission fee and no food/drink.",
+    "qen": "Why does the Drama Club event require the college's permission?",
+    "qvi": "Vì sao sự kiện của Câu lạc bộ Kịch cần trường cho phép?"
+   },
+   {
+    "id": 188,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Binu Sharma",
+      "vi": "Binu Sharma"
+     },
+     {
+      "l": "B",
+      "en": "Lara Miller",
+      "vi": "Lara Miller"
+     },
+     {
+      "l": "C",
+      "en": "Javier Nunes",
+      "vi": "Javier Nunes"
+     },
+     {
+      "l": "D",
+      "en": "Charles Goldman",
+      "vi": "Charles Goldman"
+     }
+    ],
+    "explVi": "Lara Miller là “Faculty sponsor” (giảng viên bảo trợ) ghi trong đơn — người duy nhất là giảng viên trong số các lựa chọn.",
+    "explEn": "Lara Miller is listed as the faculty sponsor on the application — the only teacher among the choices.",
+    "qen": "Which person involved is a teacher?",
+    "qvi": "Người nào liên quan là giáo viên?"
+   },
+   {
+    "id": 189,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "To persuade readers to attend the event",
+      "vi": "Thuyết phục độc giả đến xem sự kiện"
+     },
+     {
+      "l": "B",
+      "en": "To request readers' help with the event",
+      "vi": "Nhờ độc giả giúp đỡ sự kiện"
+     },
+     {
+      "l": "C",
+      "en": "To report on the event's outcome",
+      "vi": "Tường thuật kết quả sự kiện"
+     },
+     {
+      "l": "D",
+      "en": "To praise students' efforts on the event",
+      "vi": "Khen ngợi nỗ lực của sinh viên"
+     }
+    ],
+    "explVi": "Bài báo kết thúc bằng lời mời gọi cụ thể “Come to… and support…” — mục đích chính là mời gọi người đọc đến xem.",
+    "explEn": "The article ends with a direct invitation, “Come to… and support…” — its main purpose is to persuade readers to attend.",
+    "qen": "What is the purpose of the article?",
+    "qvi": "Mục đích của bài báo là gì?"
+   },
+   {
+    "id": 190,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "It is costly to organize.",
+      "vi": "Tốn kém để tổ chức."
+     },
+     {
+      "l": "B",
+      "en": "It is being held for the first time.",
+      "vi": "Đây là lần đầu tổ chức."
+     },
+     {
+      "l": "C",
+      "en": "It involves performing world-famous plays.",
+      "vi": "Biểu diễn các vở kịch nổi tiếng thế giới."
+     },
+     {
+      "l": "D",
+      "en": "It is expected to draw a large audience.",
+      "vi": "Dự kiến thu hút đông khán giả."
+     }
+    ],
+    "explVi": "Trích lời Binu Sharma: “chuyển sang địa điểm lớn hơn vì năm ngoái đông đến mức chỉ còn chỗ đứng” — cho thấy sự kiện thu hút rất đông người xem.",
+    "explEn": "Binu Sharma's quote about moving to a bigger venue due to last year's standing-room-only crowd suggests a large audience is expected.",
+    "qen": "What is suggested about the event?",
+    "qvi": "Điều gì được gợi ý về sự kiện?"
+   }
+  ]
+ },
+ {
+  "range": "191-195",
+  "type": "Government report, table & letter / Báo cáo, bảng số liệu và thư",
+  "title": "Farmers of Gromatia",
+  "passageEn": "http://commerce.nic.gt\nFarmers of Gromatia, Be Proud!\n\nThe Government of Gromatia would like to thank all its farmers for their hard work this year. Despite the {{192|winter flooding and the summer drought}}, 2010 was a great year overall for the farming industry as well as for government revenues and our overall economic health. As a nation whose income is closely linked to the productivity of our farmers, we truly value your work.\n\nWe have sent you the figures for 2000 and 2010 so that you can measure your success for yourselves. [Table: Value of Exports for Gromatia, 2000 vs. 2010 (estimated income, in millions of dollars) — Beef, Fruit, Wine, Coffee, Grains. Beef's value showed a clear rise (~$522M to ~$574M); other figures were harder to read precisely from the source image.] However, you will notice that exports were down in certain sectors—in particular, coffee. These days, coffee is becoming increasingly popular thanks to large chains of coffee shops offering cheap but tasty coffee worldwide. We feel that it is important for Gromatia to gain a position in this market. Over the next five years, we will be offering substantial subsidies to farmers who plant coffee. We hope that this will enable us to increase our annual exports.\n\nThe other areas in which we hope to excel are wine and {{191|beef}}. Producers of these items will also be receiving subsidies under our {{193|five-year plan}}. With more leisure time, better education, and {{194|higher incomes}}, people are becoming more interested in these luxury items. This is where we see a niche for us in the market. We believe that in five to ten years, these will be our fastest growing export items. Although small, Gromatia has the potential to do very well in the international market. Thank you for your efforts in taking us there.\n\nTo the Editor:\n\nThanks for your reporting on the government's new scheme to subsidize certain agricultural products. Like most people in this country, I support aid to farmers. However, I think that this aid could be {{195|more carefully targeted}} where it can do the most good.\n\nWe should provide support for farmers who grow essential foods like fruits, vegetables, and grains. Level the playing field so that smaller and medium-sized farms can become more competitive with agribusiness corporations and contribute more to our growing export industry. This money could encourage the development of the kind of agriculture people truly need.\n\nSincerely,\nG. Happ",
+  "passageVi": "http://commerce.nic.gt\nNông dân Gromatia, hãy tự hào!\n\nChính phủ Gromatia xin cảm ơn toàn thể nông dân vì đã làm việc chăm chỉ trong năm qua. Dù có {{192|lũ lụt mùa đông và hạn hán mùa hè}}, năm 2010 nhìn chung vẫn là một năm tuyệt vời cho ngành nông nghiệp cũng như doanh thu chính phủ và sức khỏe kinh tế nói chung. Là một quốc gia có thu nhập gắn chặt với năng suất của nông dân, chúng tôi thực sự trân trọng công sức của quý vị.\n\nChúng tôi đã gửi quý vị số liệu năm 2000 và 2010 để tự đánh giá thành quả của mình. [Bảng: Giá trị xuất khẩu của Gromatia, năm 2000 so với 2010 (ước tính, đơn vị triệu đô la) — Thịt bò, Trái cây, Rượu vang, Cà phê, Ngũ cốc. Giá trị thịt bò tăng rõ rệt (khoảng 522→574 triệu đô); các số liệu khác khó đọc chính xác từ ảnh gốc.] Tuy nhiên, quý vị sẽ nhận thấy xuất khẩu giảm ở một số ngành — đặc biệt là cà phê. Ngày nay, cà phê ngày càng phổ biến nhờ các chuỗi quán cà phê lớn cung cấp cà phê giá rẻ nhưng ngon trên toàn cầu. Chúng tôi cho rằng Gromatia cần có chỗ đứng trên thị trường này. Trong 5 năm tới, chúng tôi sẽ trợ cấp đáng kể cho nông dân trồng cà phê. Chúng tôi hy vọng điều này sẽ giúp tăng kim ngạch xuất khẩu hằng năm.\n\nCác lĩnh vực khác chúng tôi kỳ vọng phát triển là rượu vang và {{191|thịt bò}}. Người sản xuất các mặt hàng này cũng sẽ được trợ cấp theo {{193|kế hoạch 5 năm}}. Với nhiều thời gian rảnh hơn, giáo dục tốt hơn, và {{194|thu nhập cao hơn}}, người dân ngày càng quan tâm đến các mặt hàng cao cấp này. Đây là chỗ đứng chúng tôi thấy được trên thị trường. Chúng tôi tin trong 5 đến 10 năm tới, đây sẽ là những mặt hàng xuất khẩu tăng trưởng nhanh nhất. Dù là một nước nhỏ, Gromatia có tiềm năng làm rất tốt trên thị trường quốc tế. Cảm ơn công sức của quý vị đã đưa chúng ta đến đây.\n\nKính gửi Ban Biên tập,\n\nCảm ơn quý báo đã đưa tin về kế hoạch trợ cấp mới của chính phủ cho một số mặt hàng nông sản. Như hầu hết người dân ở đất nước này, tôi ủng hộ việc hỗ trợ nông dân. Tuy nhiên, tôi cho rằng khoản hỗ trợ này nên {{195|được nhắm mục tiêu kỹ lưỡng hơn}} để phát huy hiệu quả tốt nhất.\n\nChúng ta nên hỗ trợ những nông dân trồng các loại thực phẩm thiết yếu như trái cây, rau củ và ngũ cốc. Hãy tạo sân chơi công bằng để các nông trại nhỏ và vừa có thể cạnh tranh tốt hơn với các tập đoàn nông nghiệp lớn và đóng góp nhiều hơn cho ngành xuất khẩu đang phát triển của chúng ta. Khoản tiền này có thể khuyến khích phát triển loại hình nông nghiệp mà người dân thực sự cần.\n\nTrân trọng,\nG. Happ",
+  "questions": [
+   {
+    "id": 191,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Beef",
+      "vi": "Thịt bò"
+     },
+     {
+      "l": "B",
+      "en": "Coffee",
+      "vi": "Cà phê"
+     },
+     {
+      "l": "C",
+      "en": "Grains",
+      "vi": "Ngũ cốc"
+     },
+     {
+      "l": "D",
+      "en": "Wine",
+      "vi": "Rượu vang"
+     }
+    ],
+    "explVi": "⚠️ Bảng số liệu xuất khẩu 2000/2010 rất khó đọc trọn vẹn, nhưng những con số đọc được cho thấy **thịt bò (beef)** đã tăng rõ rệt (khoảng 522→574 triệu đô), trong khi rượu vang gần như đi ngang — nên (A) Beef được chọn thay vì (D) Wine như suy đoán trước đó. Vẫn nên đối chiếu thêm nếu có thể.",
+    "explEn": "⚠️ The 2000/2010 export table remains hard to read fully, but the partially legible figures suggest beef grew noticeably (~522→574) while wine stayed roughly flat, so (A) Beef is now favored over the earlier (D) Wine guess. Further verification is still recommended.",
+    "qen": "Which product is expected to increase most in value over the next 10 years?",
+    "qvi": "Sản phẩm nào dự kiến tăng giá trị nhiều nhất trong 10 năm tới?"
+   },
+   {
+    "id": 192,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Market troubles",
+      "vi": "Khó khăn thị trường"
+     },
+     {
+      "l": "B",
+      "en": "Climate troubles",
+      "vi": "Khó khăn thời tiết"
+     },
+     {
+      "l": "C",
+      "en": "Widespread strikes",
+      "vi": "Đình công diện rộng"
+     },
+     {
+      "l": "D",
+      "en": "Industrial difficulties",
+      "vi": "Khó khăn công nghiệp"
+     }
+    ],
+    "explVi": "Báo cáo nêu “winter flooding and the summer drought” — đều là vấn đề thời tiết/khí hậu.",
+    "explEn": "The report cites “winter flooding and the summer drought” — both climate-related issues.",
+    "qen": "What problems did farmers in Gromatia suffer in 2010?",
+    "qvi": "Nông dân Gromatia gặp vấn đề gì vào năm 2010?"
+   },
+   {
+    "id": 193,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "5 years",
+      "vi": "5 năm"
+     },
+     {
+      "l": "B",
+      "en": "10 years",
+      "vi": "10 năm"
+     },
+     {
+      "l": "C",
+      "en": "15 years",
+      "vi": "15 năm"
+     },
+     {
+      "l": "D",
+      "en": "20 years",
+      "vi": "20 năm"
+     }
+    ],
+    "explVi": "Báo cáo nói rõ “under our five-year plan” — kế hoạch trợ cấp 5 năm.",
+    "explEn": "The report specifies a “five-year plan” for the subsidies.",
+    "qen": "How long will the subsidies last?",
+    "qvi": "Khoản trợ cấp sẽ kéo dài bao lâu?"
+   },
+   {
+    "id": 194,
+    "ans": "D",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Larger quantities are available.",
+      "vi": "Nguồn cung nhiều hơn."
+     },
+     {
+      "l": "B",
+      "en": "It appeared on a television show.",
+      "vi": "Xuất hiện trên chương trình truyền hình."
+     },
+     {
+      "l": "C",
+      "en": "It can be delivered quickly.",
+      "vi": "Có thể giao hàng nhanh."
+     },
+     {
+      "l": "D",
+      "en": "People's wages have risen.",
+      "vi": "Thu nhập người dân đã tăng."
+     }
+    ],
+    "explVi": "**Xác nhận qua đoạn báo cáo chính** (không phải thư của G. Happ): “With more leisure time, better education, and **higher incomes**, people are becoming more interested in these luxury items [rượu vang và thịt bò].” — thu nhập tăng khiến thịt bò (mặt hàng cao cấp) trở nên phổ biến hơn.",
+    "explEn": "Confirmed from the main government report (not G. Happ's letter): rising incomes make luxury items like beef more popular.",
+    "qen": "According to the report, why has beef become popular?",
+    "qvi": "Theo báo cáo, vì sao thịt bò trở nên phổ biến?"
+   },
+   {
+    "id": 195,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Invest in farming equipment",
+      "vi": "Đầu tư máy móc nông nghiệp"
+     },
+     {
+      "l": "B",
+      "en": "Subsidize specific products",
+      "vi": "Trợ cấp cho các mặt hàng cụ thể"
+     },
+     {
+      "l": "C",
+      "en": "Only export fruits and vegetables",
+      "vi": "Chỉ xuất khẩu rau quả"
+     },
+     {
+      "l": "D",
+      "en": "Decrease competitiveness",
+      "vi": "Giảm tính cạnh tranh"
+     }
+    ],
+    "explVi": "**Xác nhận qua toàn văn thư của G. Happ:** “I think that this aid could be more carefully **targeted**... We should provide support for farmers who grow essential foods like fruits, vegetables, and grains.” — ông muốn trợ cấp được nhắm mục tiêu cụ thể hơn (vào các mặt hàng khác), tức vẫn là “trợ cấp cho các mặt hàng cụ thể” — khớp (B).",
+    "explEn": "Confirmed from G. Happ's full letter: he wants aid “more carefully targeted” toward farmers growing essential foods — still “subsidizing specific products,” just different ones, matching (B).",
+    "qen": "What does G. Happ think the government should do?",
+    "qvi": "Ông G. Happ nghĩ chính phủ nên làm gì?"
+   }
+  ]
+ },
+ {
+  "range": "196-200",
+  "type": "Memo, chart & e-mail / Bản ghi nhớ, biểu đồ và email",
+  "title": "MAJOR Knottzach Systems — Stationery Recycling",
+  "passageEn": "Memorandum\nTo: All Employees\nFrom: Meg Gillio, Office Manager\nSubject: Re: Stationery Recycling Policy\n\nSince {{197|our official merger with MAJOR Electronics Inc. last month}}, we have continued to use stationery with our former name, Knottzach Business Systems. Stationery which carries the new logo, MAJOR Knottzach Systems, is now available for use. All employees are requested to use this new stationery for all official correspondence, effective immediately. Please pick up a supply of the new stationery from Ryan Fischer on the fourth floor. However, in order to reduce waste and to do our best to save the environment, {{198|we are implementing two new systems}}.\n\n1) Sign-out system: Each time you receive any company stationery, you must sign a sheet specifying what you took, how much you took, and when you took it. {{199|This information will be recorded on your employee record card}}.\n\n2) Recycling: We throw away a lot of usable paper every month. All paper must be put in the recycling bins now placed in each department office. A catered pizza party will be awarded to the department that wastes the least paper during the month of September. And if your department succeeds in producing the least wastage for three months in a row, {{200|each member will receive a $50 bonus for each month}}.\n\n[Chart: Monthly Wastage of Stationery Supplies in the Offices of MAJOR Knottzach Systems — A4 copy paper, B4 copy paper, Letterhead paper, Envelopes — số liệu cụ thể không đọc rõ được từ ảnh gốc]\n\n---\nTO: Human Resources (All)\nFROM: Meg Gillio <mgillio@majorelec.com>\nSUBJECT: Recycling\nDATE: October 2\n\nDear Human Resources staff,\n\nI'd like to congratulate your department for winning the company-wide recycling contest for the month of September. Department director Stephen Zola deserves special mention for leading the effort. You followed our new policy to the letter and wasted far less paper than any other department. You will therefore be enjoying delicious free pizza next week on the day of your choice. The CEO plans to stop by during the party to congratulate you as well.\n\nWell done, and don't forget phase 2 of the contest. If you keep up the good work, I could be writing to you again in November.\n\nSincerely,\nMeg Gillio",
+  "passageVi": "Bản ghi nhớ\nĐến: Toàn thể nhân viên\nTừ: Meg Gillio, Trưởng phòng Hành chính\nChủ đề: V/v Chính sách Tái chế Văn phòng phẩm\n\nKể từ khi {{197|sáp nhập chính thức với MAJOR Electronics Inc. tháng trước}}, chúng ta vẫn dùng văn phòng phẩm mang tên cũ, Knottzach Business Systems. Văn phòng phẩm mang logo mới, MAJOR Knottzach Systems, nay đã có thể sử dụng. Toàn thể nhân viên được yêu cầu dùng văn phòng phẩm mới này cho mọi thư từ chính thức, có hiệu lực ngay. Vui lòng nhận văn phòng phẩm mới từ Ryan Fischer ở tầng 4. Tuy nhiên, để giảm lãng phí và góp phần bảo vệ môi trường, {{198|chúng ta sẽ áp dụng hai hệ thống mới}}.\n\n1) Hệ thống ký nhận: Mỗi lần nhận văn phòng phẩm của công ty, bạn phải ký vào phiếu ghi rõ đã lấy gì, số lượng bao nhiêu, và lấy khi nào. {{199|Thông tin này sẽ được lưu vào hồ sơ nhân viên của bạn}}.\n\n2) Tái chế: Chúng ta vứt bỏ rất nhiều giấy còn dùng được mỗi tháng. Toàn bộ giấy phải được bỏ vào thùng tái chế đặt tại văn phòng mỗi phòng ban. Phòng ban lãng phí ít giấy nhất trong tháng 9 sẽ được thưởng tiệc pizza. Và nếu phòng ban đó tiếp tục lãng phí ít nhất trong ba tháng liên tiếp, {{200|mỗi thành viên sẽ nhận thêm 50 đô la tiền thưởng mỗi tháng}}.\n\n[Biểu đồ: Lượng giấy văn phòng lãng phí hằng tháng tại MAJOR Knottzach Systems — giấy A4, giấy B4, giấy tiêu đề, phong bì — số liệu cụ thể không đọc rõ được từ ảnh gốc]\n\n---\nĐẾN: Phòng Nhân sự (Toàn thể)\nTỪ: Meg Gillio\nCHỦ ĐỀ: Tái chế\nNGÀY: 2 tháng 10\n\nKính gửi phòng Nhân sự,\n\nTôi xin chúc mừng phòng ban của các bạn đã thắng cuộc thi tái chế toàn công ty cho tháng 9. Giám đốc phòng ban Stephen Zola xứng đáng được nhắc tên riêng vì đã dẫn dắt nỗ lực này. Các bạn đã tuân thủ đúng chính sách mới và lãng phí ít giấy hơn hẳn mọi phòng ban khác. Vì vậy các bạn sẽ được thưởng thức pizza miễn phí vào ngày các bạn chọn tuần tới. Giám đốc điều hành (CEO) cũng dự định ghé qua chúc mừng trong buổi tiệc.\n\nLàm tốt lắm, và đừng quên giai đoạn 2 của cuộc thi. Nếu các bạn tiếp tục duy trì phong độ, tôi có thể sẽ viết thư cho các bạn một lần nữa vào tháng 11.\n\nTrân trọng,\nMeg Gillio",
+  "questions": [
+   {
+    "id": 196,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "A4 copy paper",
+      "vi": "Giấy in A4"
+     },
+     {
+      "l": "B",
+      "en": "B4 copy paper",
+      "vi": "Giấy in B4"
+     },
+     {
+      "l": "C",
+      "en": "Letterhead paper",
+      "vi": "Giấy tiêu đề"
+     },
+     {
+      "l": "D",
+      "en": "Envelopes",
+      "vi": "Phong bì"
+     }
+    ],
+    "explVi": "⚠️ Câu này dựa vào biểu đồ lãng phí giấy theo tháng mà ảnh gốc không đọc rõ số liệu được. (C) là suy đoán, anh nên đối chiếu bản gốc để xác nhận.",
+    "explEn": "⚠️ This depends on the monthly wastage chart, unreadable in the source. (C) is a best guess — please verify against the original.",
+    "qen": "Which type of paper was wasted the least?",
+    "qvi": "Loại giấy nào ít bị lãng phí nhất?"
+   },
+   {
+    "id": 197,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "New stationery was printed.",
+      "vi": "Văn phòng phẩm mới được in."
+     },
+     {
+      "l": "B",
+      "en": "Business cards were printed.",
+      "vi": "Danh thiếp được in."
+     },
+     {
+      "l": "C",
+      "en": "Two companies were merged.",
+      "vi": "Hai công ty đã sáp nhập."
+     },
+     {
+      "l": "D",
+      "en": "A new printer was chosen.",
+      "vi": "Máy in mới được chọn."
+     }
+    ],
+    "explVi": "Bản ghi nhớ nói “our official merger with MAJOR Electronics Inc. last month” — hai công ty đã sáp nhập tháng trước.",
+    "explEn": "The memo states the official merger with MAJOR Electronics Inc. happened last month.",
+    "qen": "According to the memo, what happened last month?",
+    "qvi": "Theo bản ghi nhớ, điều gì đã xảy ra tháng trước?"
+   },
+   {
+    "id": 198,
+    "ans": "B",
+    "choices": [
+     {
+      "l": "A",
+      "en": "To inform employees about the new printer",
+      "vi": "Thông báo về máy in mới"
+     },
+     {
+      "l": "B",
+      "en": "To introduce a new policy about paper",
+      "vi": "Giới thiệu chính sách mới về giấy"
+     },
+     {
+      "l": "C",
+      "en": "To announce a merger with another company",
+      "vi": "Công bố sáp nhập với công ty khác"
+     },
+     {
+      "l": "D",
+      "en": "To tell all employees about the new logo",
+      "vi": "Thông báo về logo mới"
+     }
+    ],
+    "explVi": "Trọng tâm chính của bản ghi nhớ là hai hệ thống mới: ký nhận văn phòng phẩm và tái chế giấy — tức chính sách mới về giấy/văn phòng phẩm.",
+    "explEn": "The memo's main focus is the two new systems: sign-out and recycling — a new policy about paper.",
+    "qen": "What is the purpose of the memo?",
+    "qvi": "Mục đích của bản ghi nhớ là gì?"
+   },
+   {
+    "id": 199,
+    "ans": "C",
+    "choices": [
+     {
+      "l": "A",
+      "en": "By counting all wasted sheets",
+      "vi": "Đếm tất cả giấy lãng phí"
+     },
+     {
+      "l": "B",
+      "en": "By recycling more frequently",
+      "vi": "Tái chế thường xuyên hơn"
+     },
+     {
+      "l": "C",
+      "en": "By keeping detailed records",
+      "vi": "Lưu hồ sơ chi tiết"
+     },
+     {
+      "l": "D",
+      "en": "By changing its stationery provider",
+      "vi": "Đổi nhà cung cấp văn phòng phẩm"
+     }
+    ],
+    "explVi": "Hệ thống ký nhận yêu cầu ghi rõ đã lấy gì/bao nhiêu/khi nào, lưu vào hồ sơ nhân viên — tức lưu hồ sơ chi tiết.",
+    "explEn": "The sign-out system requires recording what/how much/when was taken, kept on the employee record — i.e., detailed record-keeping.",
+    "qen": "How will the company track paper use?",
+    "qvi": "Công ty sẽ theo dõi việc sử dụng giấy bằng cách nào?"
+   },
+   {
+    "id": 200,
+    "ans": "A",
+    "choices": [
+     {
+      "l": "A",
+      "en": "Extra pay",
+      "vi": "Thêm tiền thưởng"
+     },
+     {
+      "l": "B",
+      "en": "Free food",
+      "vi": "Đồ ăn miễn phí"
+     },
+     {
+      "l": "C",
+      "en": "More stationery",
+      "vi": "Thêm văn phòng phẩm"
+     },
+     {
+      "l": "D",
+      "en": "Recognition by the CEO",
+      "vi": "Được CEO ghi nhận"
+     }
+    ],
+    "explVi": "Bản ghi nhớ nêu: nếu thắng 3 tháng liên tiếp (Chín–Mười–Mười Một), mỗi thành viên nhận thêm 50 đô la mỗi tháng — tức khoản tiền thưởng thêm. Phòng Nhân sự đã thắng tháng 9 (đã có pizza); nếu thắng tiếp tháng 11 sẽ đạt mốc 3 tháng liên tiếp và nhận tiền thưởng.",
+    "explEn": "The memo states three consecutive winning months earn a $50 bonus each; HR already won September, so winning through November would hit that milestone and earn the bonus.",
+    "qen": "What might the HR department win in November?",
+    "qvi": "Phòng Nhân sự có thể nhận được gì vào tháng 11?"
+   }
+  ]
+ }
+]</script>
+<script>
+const PASSAGES = JSON.parse(document.getElementById('pdata').textContent);
+const ALLQ = [];
+PASSAGES.forEach(p => p.questions.forEach(q => ALLQ.push(Object.assign({}, q, {range: p.range}))));
+const SCORABLE = ALLQ.filter(q => q.ans !== null);
+const QMAP = {};
+ALLQ.forEach(q => QMAP[q.id] = q);
+const TOTAL = SCORABLE.length;
+const PUBLISHED_NOTES = {};
+// Teacher mode: thêm ?teacher vào URL.
+const TEACHER_MODE = /[?&]teacher\b/.test(location.search);
+const NOTE_PREFIX = 'toeic_r5p7_note_';
+let state = {mode:'practice', showVi:true, showNote:true, answers:{}, submitted:false};
+
+const HLCLASS = ['hc0','hc1','hc2','hc3','hc4'];
+function colorForQid(qid, allIds){
+ const idx = allIds.indexOf(qid);
+ return HLCLASS[idx >= 0 ? idx % 5 : 0];
+}
+function renderHl(t, qids){
+ return esc(t).replace(/\{\{(\d+)\|([^}]*)\}\}/g, (m, n, phrase) => {
+   const cls = colorForQid(parseInt(n,10), qids);
+   return `<span class="hlspan ${cls}">(${n}) ${phrase}</span>`;
+ });
+}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function md(s){return esc(s).replace(/\*\*([\s\S]+?)\*\*/g,'<b>$1</b>').replace(/“([^”]*)”/g,'“<i>$1</i>”');}
+function nk(id){return NOTE_PREFIX+id;}
+function loadNote(id){try{return localStorage.getItem(nk(id))||''}catch(e){return ''}}
+function saveNote(id,v){try{localStorage.setItem(nk(id),v)}catch(e){}}
+
+document.querySelectorAll('.mode').forEach(m=>m.addEventListener('click',()=>{
+ document.querySelectorAll('.mode').forEach(x=>x.classList.remove('sel'));m.classList.add('sel');state.mode=m.dataset.mode;}));
+document.getElementById('startBtn').addEventListener('click',start);
+document.getElementById('restartBtn').addEventListener('click',()=>location.reload());
+document.getElementById('submitBtn').addEventListener('click',submitExam);
+document.getElementById('reviewBtn').addEventListener('click',()=>{const e=document.getElementById('quiz');if(e.scrollIntoView)e.scrollIntoView({behavior:'smooth'});});
+document.getElementById('publishBtn').addEventListener('click',publishNotes);
+document.getElementById('clearAllNotes').addEventListener('click',()=>{
+ if(!confirm('Xóa toàn bộ ghi chú giáo viên đang soạn?'))return;
+ document.querySelectorAll('.note textarea[data-pid]').forEach(t=>{t.value='';saveNote(t.getAttribute('data-pid'),'');});});
+
+function start(){
+ state.showVi=document.getElementById('tgVi').checked;
+ state.showNote=document.getElementById('tgNote').checked;
+ document.getElementById('setup').classList.add('hidden');
+ document.getElementById('progWrap').style.display='block';
+ build();
+ if(state.mode==='exam')document.getElementById('actionBar').classList.add('show');
+ if(TEACHER_MODE)document.getElementById('teacherBar').classList.add('show');
+ update();window.scrollTo({top:0});
+}
+if(TEACHER_MODE){window.addEventListener('DOMContentLoaded',()=>{
+ document.getElementById('tgVi').checked=true;document.getElementById('tgNote').checked=true;start();});}
+
+function makeNote(pid){
+ const box=document.createElement('div');box.className='note';
+ const pub=(PUBLISHED_NOTES&&PUBLISHED_NOTES[pid])?PUBLISHED_NOTES[pid]:'';
+ if(TEACHER_MODE){
+  box.innerHTML=`<div class="nbhead"><span class="nbtitle">🧑‍🏫 Ghi chú giáo viên (sẽ chia sẻ) — Đoạn ${pid}</span>`+
+   `<span class="nbstatus" data-status>Tự động lưu trên trình duyệt</span></div>`+
+   `<textarea data-pid="${pid}" placeholder="Ghi chú / điểm cần nhấn mạnh / câu hỏi thảo luận…"></textarea>`+
+   `<div style="margin-top:6px;text-align:right"><button class="nbclear" type="button">Xóa ghi chú</button></div>`;
+ }else{
+  let h='';
+  if(pub)h+=`<div class="teachernote"><div class="tnlabel">🧑‍🏫 Ghi chú của giáo viên</div><div class="tntext">${esc(pub)}</div></div>`;
+  h+=`<div class="studentlbl">✏️ Ghi chú của bạn (chỉ lưu trên máy bạn)</div>`+
+   `<div class="nbhead"><span class="nbtitle">📝 Ghi chú — Đoạn ${pid}</span>`+
+   `<span class="nbstatus" data-status>Tự động lưu trên trình duyệt</span></div>`+
+   `<textarea placeholder="Từ mới / điểm cần ôn…"></textarea>`+
+   `<div style="margin-top:6px;text-align:right"><button class="nbclear" type="button">Xóa ghi chú</button></div>`;
+  box.innerHTML=h;
+ }
+ const ta=box.querySelector('textarea'),st=box.querySelector('[data-status]');
+ ta.value=TEACHER_MODE?(loadNote(pid)||pub):loadNote(pid);
+ let t;ta.addEventListener('input',()=>{st.textContent='Đang lưu…';clearTimeout(t);
+  t=setTimeout(()=>{saveNote(pid,ta.value);st.textContent='Đã lưu ✓';setTimeout(()=>st.textContent='Tự động lưu trên trình duyệt',1500);},350);});
+ box.querySelector('.nbclear').addEventListener('click',()=>{
+  if(ta.value&&!confirm('Xóa ghi chú của đoạn này?'))return;
+  ta.value='';saveNote(pid,'');st.textContent='Đã xóa';setTimeout(()=>st.textContent='Tự động lưu trên trình duyệt',1200);});
+ return box;
+}
+function collectNotes(){const n={};document.querySelectorAll('.note textarea[data-pid]').forEach(t=>{
+ const v=t.value.trim();if(v)n[t.getAttribute('data-pid')]=v;});return n;}
+function publishNotes(){
+ const notes=collectNotes(),c=Object.keys(notes).length;
+ if(c===0&&!confirm('Chưa có ghi chú nào. Vẫn tạo file?'))return;
+ const cl=document.documentElement.cloneNode(true);
+ const b=cl.querySelector('#teacherBar');if(b)b.classList.remove('show');
+ const q=cl.querySelector('#quiz');if(q)q.innerHTML='';
+ const s=cl.querySelector('#setup');if(s)s.classList.remove('hidden');
+ const p=cl.querySelector('#progWrap');if(p)p.style.display='none';
+ const a=cl.querySelector('#actionBar');if(a)a.classList.remove('show');
+ const r=cl.querySelector('#results');if(r)r.classList.remove('show');
+ let src='<!DOCTYPE html>\n'+cl.outerHTML;
+ src=src.replace(/const PUBLISHED_NOTES = [\s\S]*?;\n\/\/ Teacher mode/,'const PUBLISHED_NOTES = '+JSON.stringify(notes)+';\n// Teacher mode');
+ const blob=new Blob([src],{type:'text/html'});const url=URL.createObjectURL(blob);
+ const el=document.createElement('a');el.href=url;el.download='index.html';
+ document.body.appendChild(el);el.click();document.body.removeChild(el);URL.revokeObjectURL(url);
+ alert('Đã tạo file index.html với '+c+' ghi chú.\n\nTải file này lên GitHub Pages (thay file cũ). Sinh viên mở trang sẽ thấy ghi chú của bạn.');
+}
+function build(){
+ const root=document.getElementById('quiz');root.innerHTML='';
+ PASSAGES.forEach(p=>{
+  const el=document.createElement('section');
+  el.className='card'+(state.showVi?' showvi':'')+(state.showVi?'':' hidevi');
+  el.innerHTML=`<div class="chead"><span class="rng">Câu ${p.range}</span><span class="ty">${esc(p.type)}</span><span class="ti">${esc(p.title)}</span></div>`;
+  const qids=p.questions.map(q=>q.id);
+  const markedIds=qids.filter(id=>p.passageEn.includes('{{'+id+'|'));
+  const legend=document.createElement('div');legend.className='legend';
+  if(markedIds.length){
+   legend.innerHTML='🎨 Bằng chứng trong bài: '+markedIds.map(id=>`<span class="lgitem"><span class="lgdot ${colorForQid(id,qids)}"></span>Câu ${id}</span>`).join(' ');
+   el.appendChild(legend);
+  }
+  const grid=document.createElement('div');grid.className='passagegrid';
+  const colEn=document.createElement('div');colEn.className='pcol en';
+  colEn.innerHTML=`<h4><span class="ic">EN</span>Đề gốc (English)</h4><div class="ptext">${renderHl(p.passageEn,qids)}</div>`;
+  const colVi=document.createElement('div');colVi.className='pcol vi';
+  colVi.innerHTML=`<h4><span class="ic">VN</span>Bản dịch tiếng Việt</h4><div class="ptext">${renderHl(p.passageVi,qids)}</div>`;
+  grid.appendChild(colEn);grid.appendChild(colVi);
+  el.appendChild(grid);
+  p.questions.forEach(q=>{
+   const qb=document.createElement('div');qb.className='qblock';qb.id='qb'+q.id;
+   qb.innerHTML=`<div class="qnum">Câu ${q.id}</div><div class="qstem">${esc(q.qen)}</div><div class="qstemvi">${esc(q.qvi)}</div>`;
+   if(q.ans===null){
+    qb.innerHTML+=`<div class="unavail">⚠️ Ảnh gốc của câu này quá mờ để trích xuất chính xác — không có dữ liệu đáng tin cậy. Vui lòng đối chiếu với đề/đáp án gốc.</div>`;
+    el.appendChild(qb);return;
+   }
+   const opts=document.createElement('div');
+   const isLong = q.choices.some(c=>c.en.length>40);
+   opts.className='opts'+(isLong?' fullopt':'');
+   q.choices.forEach(c=>{
+    const o=document.createElement('div');o.className='opt';o.dataset.l=c.l;
+    o.innerHTML=`<span class="ol">${c.l}</span><span class="otxt"><b>${esc(c.en)}</b><span class="om">${esc(c.vi)}</span></span><span class="tick"></span>`;
+    o.addEventListener('click',()=>pick(q,o));opts.appendChild(o);});
+   qb.appendChild(opts);
+   const fb=document.createElement('div');fb.className='fb';fb.id='fb'+q.id;qb.appendChild(fb);
+   el.appendChild(qb);
+  });
+  if(state.showNote)el.appendChild(makeNote(p.range));
+  root.appendChild(el);
+ });
+}
+function pick(q,el){
+ if(state.submitted)return;
+ const qb=el.closest('.qblock');
+ if(state.mode==='practice'&&state.answers[q.id])return;
+ qb.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
+ el.classList.add('sel');state.answers[q.id]=el.dataset.l;
+ if(state.mode==='practice')reveal(q,true);
+ update();
+}
+function reveal(q,withFb){
+ const fb=document.getElementById('fb'+q.id);const qb=fb.closest('.qblock');
+ const chosen=state.answers[q.id];
+ qb.querySelectorAll('.opt').forEach(o=>{
+  o.classList.add('locked');const l=o.dataset.l;
+  if(l===q.ans){o.classList.add('correct');o.querySelector('.tick').textContent='✓';}
+  if(l===chosen&&chosen!==q.ans){o.classList.add('wrong');o.querySelector('.tick').textContent='✗';}});
+ if(withFb){
+  const ok=chosen===q.ans;
+  fb.className='fb show '+(ok?'ok':'no');
+  fb.innerHTML=`<div class="verdict">${ok?'✓ Chính xác!':'✗ Chưa đúng — đáp án là ('+q.ans+')'}</div>`+
+   `<div class="row"><b>Giải thích:</b> ${md(q.explVi)}</div>`+
+   `<div class="row en">${esc(q.explEn)}</div>`;
+ }
+}
+function update(){
+ const n=Object.keys(state.answers).filter(id=>QMAP[id]&&QMAP[id].ans!==null).length;
+ document.getElementById('progText').textContent=`${n} / ${TOTAL} câu`;
+ document.getElementById('progFill').style.width=(n/TOTAL*100)+'%';
+ if(state.mode==='exam')document.getElementById('answeredInfo').textContent=`Đã trả lời ${n} / ${TOTAL} câu`;
+ if(state.mode==='practice'){
+  const c=SCORABLE.filter(q=>state.answers[q.id]===q.ans).length;
+  document.getElementById('scoreText').textContent=`Đúng ${c}/${n}`;}
+}
+function submitExam(){
+ const n=Object.keys(state.answers).filter(id=>QMAP[id]&&QMAP[id].ans!==null).length;
+ if(n<TOTAL&&!confirm(`Bạn mới trả lời ${n}/${TOTAL} câu. Vẫn nộp bài?`))return;
+ state.submitted=true;document.getElementById('actionBar').classList.remove('show');
+ let c=0;SCORABLE.forEach(q=>{if(state.answers[q.id]===q.ans)c++;reveal(q,true);});
+ const res=document.getElementById('results');res.classList.add('show');
+ document.getElementById('rScore').innerHTML=`${c}<small>/${TOTAL}</small>`;
+ const pct=Math.round(c/TOTAL*100);let m;
+ if(pct>=90)m='Xuất sắc! Khả năng đọc hiểu Part 7 rất tốt.';
+ else if(pct>=70)m='Tốt! Chú ý thêm kỹ năng đọc lướt tìm thông tin (scanning).';
+ else if(pct>=50)m='Khá ổn — đọc kỹ phần giải thích để cải thiện tốc độ đọc hiểu.';
+ else m='Cần luyện thêm. Đọc kỹ đoạn văn trước khi chọn đáp án, chú ý câu hỏi suy luận.';
+ document.getElementById('rMsg').textContent=`Bạn đúng ${pct}% số câu (trên ${TOTAL} câu có dữ liệu). ${m}`;
+ document.getElementById('scoreText').textContent=`Đúng ${c}/${TOTAL}`;
+ if(res.scrollIntoView)res.scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body></html>
